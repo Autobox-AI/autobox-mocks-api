@@ -4,7 +4,7 @@
         "enabled": true
     },
     "functions": {
-      "api/getOrganizations.ts": {
+      "api/organizations.ts": {
         "maxDuration": 5
       },
       "api/ping.ts": {
