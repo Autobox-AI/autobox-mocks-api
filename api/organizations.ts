@@ -1,9 +1,6 @@
 import { VercelRequest, VercelResponse } from '@vercel/node'
-import { getRandomMessage } from '../src'
+import { getOrganizations } from '../src'
 
-export const getOrganizations = (request: VercelRequest, response: VercelResponse) => {
-  const randomMessage = getRandomMessage()
-  response.status(200).send(`Hello, ${randomMessage}`)
+export default function handler(request: VercelRequest, response: VercelResponse) {
+  return getOrganizations(request, response)
 }
-
-export default getOrganizations

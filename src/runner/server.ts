@@ -3,10 +3,13 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 import { VercelRequest, VercelResponse } from '@vercel/node'
+import bookmarksHandler from 'api/bookmarks'
+import bookmarksIdHandler from 'api/bookmarks/[id]'
+import getOrganizations from 'api/organizations'
+import ping from 'api/ping'
 import express from 'express'
-import { getOrganizations } from '../../api/getOrganizations'
-import { ping } from '../../api/ping'
 import { PORT_DEV_SERVER } from '../config/constants'
+// import { getBookmarks } from 'src'
 
 const app = express()
 
@@ -21,6 +24,8 @@ const handlerWrapper = (handler: (req: VercelRequest, res: VercelResponse) => vo
 }
 
 app.get('/organizations', handlerWrapper(getOrganizations))
+app.get('/bookmarks', handlerWrapper(bookmarksHandler))
+app.get('/bookmarks/:id', handlerWrapper(bookmarksIdHandler))
 app.get('/ping', handlerWrapper(ping))
 
 app.listen(PORT_DEV_SERVER, () => {

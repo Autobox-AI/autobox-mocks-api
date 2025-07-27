@@ -4,10 +4,16 @@
         "enabled": true
     },
     "functions": {
+      "api/ping.ts": {
+        "maxDuration": 5
+      },
       "api/organizations.ts": {
         "maxDuration": 5
       },
-      "api/ping.ts": {
+      "api/bookmarks/index.ts": {
+        "maxDuration": 5
+      },
+      "api/bookmarks/[id].ts": {
         "maxDuration": 5
       }
     }
