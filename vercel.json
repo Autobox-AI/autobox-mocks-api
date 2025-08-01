@@ -7,11 +7,5 @@
       "api/index.ts": {
         "maxDuration": 5
       }
-    },
-    "rewrites": [
-      {
-        "source": "/api/(.*)",
-        "destination": "/api/index.ts"
-      }
-    ]
+    }
 }
