@@ -25,52 +25,62 @@ export function getRunTraces(request: VercelRequest, response: VercelResponse) {
         'X-Accel-Buffering': 'no',
       })
 
-      if (run.status === 'completed') {
-        // For completed runs, send all traces immediately
+      // Only stream for "in progress" status (with space)
+      if (run.status === 'in progress') {
+        // For in-progress runs, simulate streaming one trace at a time
         const sortedTraces = traces.sort((a, b) => {
           const dateA = new Date(a.created_at).getTime()
           const dateB = new Date(b.created_at).getTime()
-          return dateB - dateA
+          return dateA - dateB // ASC order for chronological streaming
         })
 
-        for (const trace of sortedTraces) {
-          const traceData = JSON.stringify(trace)
-          response.write(`data: ${traceData}\n\n`)
-        }
-
-        response.write('data: [DONE]\n\n')
-        response.end()
-        return
-      } else {
-        // For non-completed runs, duplicate traces up to 10 times then complete
-        const sortedTraces = traces.sort((a, b) => {
-          const dateA = new Date(a.created_at).getTime()
-          const dateB = new Date(b.created_at).getTime()
-          return dateA - dateB
-        })
-
-        // Send original traces first
-        for (const trace of sortedTraces) {
-          const traceData = JSON.stringify(trace)
-          response.write(`data: ${traceData}\n\n`)
-        }
-
-        // Duplicate traces up to 10 additional times
-        for (let i = 0; i < 10; i++) {
-          for (const trace of sortedTraces) {
-            // Create a modified copy with updated timestamp
+        let traceIndex = 0
+        const totalTraces = sortedTraces.length
+        const maxIterations = 3 // Send traces 3 times to simulate ongoing activity
+        
+        const sendNextTrace = () => {
+          if (traceIndex < totalTraces * maxIterations) {
+            const originalIndex = traceIndex % totalTraces
+            const iteration = Math.floor(traceIndex / totalTraces)
+            const trace = sortedTraces[originalIndex]
+            
+            // Create a modified copy with updated timestamp for iterations > 0
             const now = new Date()
-            const duplicatedTrace = {
+            const modifiedTrace = iteration === 0 ? trace : {
               ...trace,
-              created_at: new Date(now.getTime() + i * 1000).toISOString(),
-              content: `[Simulated] ${trace.content}`
+              created_at: new Date(now.getTime() + (traceIndex * 1000)).toISOString(),
+              content: `[Iteration ${iteration + 1}] ${trace.content}`
             }
-            const traceData = JSON.stringify(duplicatedTrace)
+            
+            const traceData = JSON.stringify(modifiedTrace)
             response.write(`data: ${traceData}\n\n`)
+            
+            traceIndex++
+            // Send next trace after a delay (500ms to 1500ms for realistic simulation)
+            setTimeout(sendNextTrace, 500 + Math.random() * 1000)
+          } else {
+            // All traces sent, complete the stream
+            response.write('data: [DONE]\n\n')
+            response.end()
           }
         }
+        
+        // Start streaming
+        sendNextTrace()
+        return
+      } else {
+        // For completed or other statuses, send all traces immediately
+        const sortedTraces = traces.sort((a, b) => {
+          const dateA = new Date(a.created_at).getTime()
+          const dateB = new Date(b.created_at).getTime()
+          return dateB - dateA // DESC order for completed
+        })
 
-        // Complete the run
+        for (const trace of sortedTraces) {
+          const traceData = JSON.stringify(trace)
+          response.write(`data: ${traceData}\n\n`)
+        }
+
         response.write('data: [DONE]\n\n')
         response.end()
         return
