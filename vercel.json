@@ -7,13 +7,52 @@
       "api/ping.ts": {
         "maxDuration": 5
       },
-      "api/organizations.ts": {
+      "api/organizations/index.ts": {
         "maxDuration": 5
       },
-      "api/bookmarks/index.ts": {
+      "api/organizations/[oid].ts": {
         "maxDuration": 5
       },
-      "api/bookmarks/[id].ts": {
+      "api/organizations/[oid]/bookmarks/index.ts": {
+        "maxDuration": 5
+      },
+      "api/organizations/[oid]/bookmarks/[id].ts": {
+        "maxDuration": 5
+      },
+      "api/organizations/[oid]/projects/index.ts": {
+        "maxDuration": 5
+      },
+      "api/projects/[pid]/index.ts": {
+        "maxDuration": 5
+      },
+      "api/projects/[pid]/simulations/index.ts": {
+        "maxDuration": 5
+      },
+      "api/simulations/[id].ts": {
+        "maxDuration": 5
+      },
+      "api/simulations/[id]/runs.ts": {
+        "maxDuration": 5
+      },
+      "api/runs/[rid].ts": {
+        "maxDuration": 5
+      },
+      "api/runs/[rid]/traces.ts": {
+        "maxDuration": 5
+      },
+      "api/runs/[rid]/metrics.ts": {
+        "maxDuration": 5
+      },
+      "api/runs/[rid]/agents.ts": {
+        "maxDuration": 5
+      },
+      "api/runs/[rid]/agents/[agentId].ts": {
+        "maxDuration": 5
+      },
+      "api/runs/[rid]/agents/[agentId]/traces.ts": {
+        "maxDuration": 5
+      },
+      "api/templates/metrics.ts": {
         "maxDuration": 5
       }
     }

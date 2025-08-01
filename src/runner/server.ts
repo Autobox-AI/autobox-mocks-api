@@ -3,9 +3,9 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 import { VercelRequest, VercelResponse } from '@vercel/node'
-import bookmarksHandler from 'api/bookmarks'
-import bookmarksIdHandler from 'api/bookmarks/[id]'
 import getOrganizations from 'api/organizations'
+import bookmarksHandler from 'api/organizations/[oid]/bookmarks'
+import bookmarksIdHandler from 'api/organizations/[oid]/bookmarks/[id]'
 import ping from 'api/ping'
 import express from 'express'
 import { PORT_DEV_SERVER } from '../config/constants'
