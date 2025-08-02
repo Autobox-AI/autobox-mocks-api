@@ -6,6 +6,7 @@ import {
   getMetricTemplates,
   getOrganizationId,
   getOrganizations,
+  getOrganizationSimulations,
   getProjectById,
   getProjects,
   getRunAgentById,
@@ -46,6 +47,10 @@ const routes: Record<string, RouteHandler> = {
   },
   'organizations/[oid]': {
     handler: getOrganizationId,
+    methods: ['GET'],
+  },
+  'organizations/[oid]/simulations': {
+    handler: getOrganizationSimulations,
     methods: ['GET'],
   },
 

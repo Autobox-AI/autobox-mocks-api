@@ -5,6 +5,7 @@ export {
   getMetricTemplates,
   getOrganizationId,
   getOrganizations,
+  getOrganizationSimulations,
   getProjectById,
   getProjects,
   getRunAgentById,
