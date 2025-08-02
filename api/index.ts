@@ -176,9 +176,10 @@ function matchRoute(path: string): { route: string; params: Record<string, strin
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
-    // Extract path from URL, removing /api prefix
+    // Extract path from URL, removing /api prefix and query string
     const url = req.url || ''
-    const path = url.replace(/^\/api\//, '')
+    const [pathname] = url.split('?')
+    const path = pathname.replace(/^\/api\//, '')
 
     // Match route
     const match = matchRoute(path)

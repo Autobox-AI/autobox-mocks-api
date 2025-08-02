@@ -4,8 +4,9 @@ import { runs } from '../mocks'
 
 export function getRunTraces(request: VercelRequest, response: VercelResponse) {
   try {
-    const { rid, stream } = request.query
+    const { rid, stream, counter } = request.query
     const isStreaming = stream === 'true'
+    const pollingCounter = counter ? parseInt(counter as string, 10) : null
 
     const runEntry = runs.find((r) => r.run && r.run.id === rid)
 
@@ -86,13 +87,41 @@ export function getRunTraces(request: VercelRequest, response: VercelResponse) {
         return
       }
     } else {
-      // Non-streaming response (original behavior)
+      // Non-streaming response with polling support
       const sortedTraces = traces.sort((a, b) => {
         const dateA = new Date(a.created_at).getTime()
         const dateB = new Date(b.created_at).getTime()
         return dateB - dateA
       })
 
+      // If polling counter is provided and run is "in progress", return partial traces
+      if (pollingCounter !== null && run.status === 'in progress') {
+        // Calculate which trace to return based on counter
+        // Counter starts at 10 and goes down to 1
+        // We want to return traces in chronological order (oldest first)
+        const reversedTraces = [...sortedTraces].reverse() // Now in ASC order (oldest first)
+        const traceIndex = 10 - pollingCounter // 0 when counter=10, 9 when counter=1
+        
+        // If we've shown all traces, mark as done
+        if (traceIndex >= reversedTraces.length) {
+          logger.info(`Final polling request (counter=${pollingCounter}) for run: ${rid}, all traces shown`)
+          return response.status(200).json({ 
+            traces: [],
+            done: true 
+          })
+        }
+
+        // Return exactly one trace
+        const traceToReturn = reversedTraces[traceIndex]
+        logger.info(`Polling request (counter=${pollingCounter}) for run: ${rid}, returning trace ${traceIndex + 1} of ${reversedTraces.length}`)
+        
+        return response.status(200).json({ 
+          traces: [traceToReturn],
+          done: false 
+        })
+      }
+
+      // Default behavior - return all traces
       logger.info(`Returning ${sortedTraces.length} traces for run: ${rid}`)
       response.status(200).json({ traces: sortedTraces })
     }
