@@ -19,6 +19,7 @@ import {
   getSimulationById,
   getSimulations,
   postBookmarks,
+  postChat,
   postMetricTemplates,
   postProjects,
   postRuns,
@@ -141,6 +142,12 @@ const routes: Record<string, RouteHandler> = {
       if (req.method === 'POST') return postMetricTemplates(req, res)
     },
     methods: ['GET', 'POST'],
+  },
+
+  // Chat
+  'chat': {
+    handler: postChat,
+    methods: ['POST', 'OPTIONS'],
   },
 }
 
