@@ -145,7 +145,7 @@ const routes: Record<string, RouteHandler> = {
   },
 
   // Chat
-  'chat': {
+  chat: {
     handler: postChat,
     methods: ['POST', 'OPTIONS'],
   },

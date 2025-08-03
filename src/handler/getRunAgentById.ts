@@ -1,5 +1,6 @@
 import { VercelRequest, VercelResponse } from '@vercel/node'
 import { runs } from '../mocks'
+import { simulations } from '../mocks/simulations'
 import { logger } from '../logger'
 
 export function getRunAgentById(request: VercelRequest, response: VercelResponse) {
@@ -14,17 +15,63 @@ export function getRunAgentById(request: VercelRequest, response: VercelResponse
     }
     
     const run = runEntry.run
-    
-    // Find agent in workers, orchestrator, evaluator, planner, or reporter
-    const agents = [
-      ...(run.workers || []),
-      { id: run.orchestrator_id, name: 'orchestrator' },
-      { id: run.evaluator_id, name: 'evaluator' },
-      { id: run.planner_id, name: 'planner' },
-      { id: run.reporter_id, name: 'reporter' }
-    ].filter(Boolean)
-    
-    const agent = agents.find(a => a.id === agentId)
+
+    // Find the simulation to get detailed agent information
+    const simulation = simulations.simulations.find(s => s.id === run.simulation_id)
+
+    if (!simulation) {
+      logger.warn(`Simulation not found for run: ${rid}`)
+      return response.status(404).json({ error: 'Simulation not found' })
+    }
+
+    // Get detailed agent information from simulation
+    const detailedAgents = simulation.agents.map(agent => ({
+      id: agent.id,
+      name: agent.name,
+      description: agent.description,
+      role: agent.role,
+      backstory: agent.backstory,
+      instructions: agent.instructions || null
+    }))
+
+    // Add system agents (orchestrator, evaluator, planner, reporter) with basic info
+    const systemAgents = [
+      {
+        id: simulation.orchestrator.id,
+        name: simulation.orchestrator.name,
+        description: 'Orchestrates the simulation flow and coordinates agent interactions',
+        role: 'orchestrator',
+        backstory: 'System agent responsible for managing simulation execution',
+        instructions: null
+      },
+      {
+        id: simulation.evaluator.id,
+        name: simulation.evaluator.name,
+        description: 'Evaluates simulation outcomes and agent performance',
+        role: 'evaluator',
+        backstory: 'System agent responsible for assessing simulation results',
+        instructions: null
+      },
+      {
+        id: simulation.planner.id,
+        name: simulation.planner.name,
+        description: 'Creates and manages execution plans for the simulation',
+        role: 'planner',
+        backstory: 'System agent responsible for simulation planning and strategy',
+        instructions: null
+      },
+      {
+        id: simulation.reporter.id,
+        name: simulation.reporter.name,
+        description: 'Generates summaries and reports of simulation results',
+        role: 'reporter',
+        backstory: 'System agent responsible for documentation and reporting',
+        instructions: null
+      }
+    ]
+
+    const allAgents = [...detailedAgents, ...systemAgents]
+    const agent = allAgents.find(a => a.id === agentId)
     
     if (!agent) {
       logger.warn(`Agent not found: ${agentId}`)

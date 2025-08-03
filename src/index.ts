@@ -18,6 +18,7 @@ export {
   getSimulationById,
   getSimulations,
   postBookmarks,
+  postChat,
   postMetricTemplates,
   postProjects,
   postRuns,
