@@ -11,7 +11,10 @@
     "start:vercel": "nodemon --exec vercel dev --listen 9000",
     "test": "yarn test:unit && yarn test:integration",
     "test:integration": "NODE_ENV=test jest --config jest.integration.js --passWithNoTests",
-    "test:unit": "NODE_ENV=test jest --config jest.unit.js --passWithNoTests"
+    "test:unit": "NODE_ENV=test jest --config jest.unit.js --passWithNoTests",
+    "generate": "ts-node -r tsconfig-paths/register src/generator/main.ts",
+    "generate:build": "tsc --project tsconfig.generator.json",
+    "generate:prod": "node dist/generator/main.js"
   },
   "keywords": [],
   "license": "Apache-2.0",
@@ -34,12 +37,15 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "@influxdata/influxdb-client": "^1.35.0",
     "@types/js-yaml": "^4.0.9",
     "express": "^4.21.2",
     "express-async-router": "^0.1.15",
     "googleapis": "^140.0.1",
+    "ioredis": "^5.7.0",
     "js-yaml": "^4.1.0",
-    "openai": "^4.73.1",
+    "openai": "^5.12.2",
     "tsconfig-paths": "^4.2.0",
     "winston": "^3.13.0",
     "winston-transport": "^4.7.0",

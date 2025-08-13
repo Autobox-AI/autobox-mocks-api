@@ -1,0 +1,6690 @@
+{
+  "5388ffbb-af96-46e5-ae9b-82a2366a8fa8": [
+    {
+      "name": "activity_participation_rate",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.691Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-12T16:59:27.691Z",
+          "type": "gauge",
+          "value": 80
+        },
+        {
+          "dt": "2025-07-13T18:00:27.691Z",
+          "type": "gauge",
+          "value": 78
+        },
+        {
+          "dt": "2025-07-14T19:01:27.691Z",
+          "type": "gauge",
+          "value": 77
+        },
+        {
+          "dt": "2025-07-15T20:02:27.691Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-16T21:03:27.691Z",
+          "type": "gauge",
+          "value": 78
+        },
+        {
+          "dt": "2025-07-17T22:04:27.691Z",
+          "type": "gauge",
+          "value": 79
+        },
+        {
+          "dt": "2025-07-18T23:05:27.691Z",
+          "type": "gauge",
+          "value": 80
+        },
+        {
+          "dt": "2025-07-19T16:58:27.691Z",
+          "type": "gauge",
+          "value": 82
+        },
+        {
+          "dt": "2025-07-20T16:58:27.691Z",
+          "type": "gauge",
+          "value": 83
+        },
+        {
+          "dt": "2025-07-21T16:58:27.691Z",
+          "type": "gauge",
+          "value": 81
+        },
+        {
+          "dt": "2025-07-22T16:58:27.691Z",
+          "type": "gauge",
+          "value": 80
+        },
+        {
+          "dt": "2025-07-23T16:58:27.691Z",
+          "type": "gauge",
+          "value": 79
+        },
+        {
+          "dt": "2025-07-24T16:58:27.691Z",
+          "type": "gauge",
+          "value": 78
+        },
+        {
+          "dt": "2025-07-25T16:58:27.691Z",
+          "type": "gauge",
+          "value": 77
+        },
+        {
+          "dt": "2025-07-26T16:58:27.691Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-27T16:58:27.691Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-28T16:58:27.691Z",
+          "type": "gauge",
+          "value": 74
+        },
+        {
+          "dt": "2025-07-29T16:58:27.691Z",
+          "type": "gauge",
+          "value": 73
+        },
+        {
+          "dt": "2025-07-30T16:58:27.691Z",
+          "type": "gauge",
+          "value": 72
+        }
+      ],
+      "type": "gauge",
+      "tags": [
+        {
+          "key": "metric_name",
+          "value": "activity_participation_rate"
+        }
+      ],
+      "unit": "percentage"
+    },
+    {
+      "name": "decision_time_seconds",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.691Z",
+          "type": "histogram",
+          "count": 1,
+          "sum": 120,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 1
+            },
+            {
+              "le": 240,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-12T16:59:27.691Z",
+          "type": "histogram",
+          "count": 2,
+          "sum": 220,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-13T18:00:27.691Z",
+          "type": "histogram",
+          "count": 3,
+          "sum": 330,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-14T19:01:27.691Z",
+          "type": "histogram",
+          "count": 4,
+          "sum": 400,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 1
+            },
+            {
+              "le": 120,
+              "count": 2
+            },
+            {
+              "le": 180,
+              "count": 3
+            },
+            {
+              "le": 240,
+              "count": 4
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-15T20:02:27.691Z",
+          "type": "histogram",
+          "count": 5,
+          "sum": 520,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 1
+            },
+            {
+              "le": 120,
+              "count": 2
+            },
+            {
+              "le": 180,
+              "count": 3
+            },
+            {
+              "le": 240,
+              "count": 5
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-16T21:03:27.691Z",
+          "type": "histogram",
+          "count": 6,
+          "sum": 660,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 1
+            },
+            {
+              "le": 120,
+              "count": 2
+            },
+            {
+              "le": 180,
+              "count": 3
+            },
+            {
+              "le": 240,
+              "count": 6
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-17T22:04:27.691Z",
+          "type": "histogram",
+          "count": 7,
+          "sum": 700,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 2
+            },
+            {
+              "le": 120,
+              "count": 3
+            },
+            {
+              "le": 180,
+              "count": 4
+            },
+            {
+              "le": 240,
+              "count": 7
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-18T23:05:27.691Z",
+          "type": "histogram",
+          "count": 8,
+          "sum": 760,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 2
+            },
+            {
+              "le": 120,
+              "count": 3
+            },
+            {
+              "le": 180,
+              "count": 4
+            },
+            {
+              "le": 240,
+              "count": 8
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-19T16:58:27.691Z",
+          "type": "histogram",
+          "count": 9,
+          "sum": 820,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 2
+            },
+            {
+              "le": 120,
+              "count": 4
+            },
+            {
+              "le": 180,
+              "count": 5
+            },
+            {
+              "le": 240,
+              "count": 9
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-20T16:58:27.691Z",
+          "type": "histogram",
+          "count": 10,
+          "sum": 900,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 3
+            },
+            {
+              "le": 120,
+              "count": 4
+            },
+            {
+              "le": 180,
+              "count": 6
+            },
+            {
+              "le": 240,
+              "count": 10
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-21T16:58:27.691Z",
+          "type": "histogram",
+          "count": 11,
+          "sum": 950,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 3
+            },
+            {
+              "le": 120,
+              "count": 4
+            },
+            {
+              "le": 180,
+              "count": 6
+            },
+            {
+              "le": 240,
+              "count": 11
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-22T16:58:27.691Z",
+          "type": "histogram",
+          "count": 12,
+          "sum": 1020,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 3
+            },
+            {
+              "le": 120,
+              "count": 5
+            },
+            {
+              "le": 180,
+              "count": 6
+            },
+            {
+              "le": 240,
+              "count": 12
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-23T16:58:27.691Z",
+          "type": "histogram",
+          "count": 13,
+          "sum": 1080,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 4
+            },
+            {
+              "le": 120,
+              "count": 5
+            },
+            {
+              "le": 180,
+              "count": 7
+            },
+            {
+              "le": 240,
+              "count": 13
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-24T16:58:27.691Z",
+          "type": "histogram",
+          "count": 14,
+          "sum": 1150,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 4
+            },
+            {
+              "le": 120,
+              "count": 6
+            },
+            {
+              "le": 180,
+              "count": 7
+            },
+            {
+              "le": 240,
+              "count": 14
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-25T16:58:27.691Z",
+          "type": "histogram",
+          "count": 15,
+          "sum": 1210,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 4
+            },
+            {
+              "le": 120,
+              "count": 6
+            },
+            {
+              "le": 180,
+              "count": 8
+            },
+            {
+              "le": 240,
+              "count": 15
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-26T16:58:27.691Z",
+          "type": "histogram",
+          "count": 16,
+          "sum": 1250,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 5
+            },
+            {
+              "le": 120,
+              "count": 6
+            },
+            {
+              "le": 180,
+              "count": 8
+            },
+            {
+              "le": 240,
+              "count": 16
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-27T16:58:27.691Z",
+          "type": "histogram",
+          "count": 17,
+          "sum": 1300,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 5
+            },
+            {
+              "le": 120,
+              "count": 7
+            },
+            {
+              "le": 180,
+              "count": 8
+            },
+            {
+              "le": 240,
+              "count": 17
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-28T16:58:27.691Z",
+          "type": "histogram",
+          "count": 18,
+          "sum": 1350,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 5
+            },
+            {
+              "le": 120,
+              "count": 7
+            },
+            {
+              "le": 180,
+              "count": 9
+            },
+            {
+              "le": 240,
+              "count": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-29T16:58:27.691Z",
+          "type": "histogram",
+          "count": 19,
+          "sum": 1400,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 6
+            },
+            {
+              "le": 120,
+              "count": 7
+            },
+            {
+              "le": 180,
+              "count": 9
+            },
+            {
+              "le": 240,
+              "count": 19
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-30T16:58:27.691Z",
+          "type": "histogram",
+          "count": 20,
+          "sum": 1460,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 6
+            },
+            {
+              "le": 120,
+              "count": 8
+            },
+            {
+              "le": 180,
+              "count": 9
+            },
+            {
+              "le": 240,
+              "count": 20
+            }
+          ]
+        }
+      ],
+      "type": "histogram",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "decision_time_seconds"
+        }
+      ],
+      "unit": "seconds"
+    },
+    {
+      "name": "activity_interaction_count",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.691Z",
+          "type": "counter",
+          "value": 15
+        },
+        {
+          "dt": "2025-07-12T16:59:27.691Z",
+          "type": "counter",
+          "value": 30
+        },
+        {
+          "dt": "2025-07-13T18:00:27.691Z",
+          "type": "counter",
+          "value": 45
+        },
+        {
+          "dt": "2025-07-14T19:01:27.691Z",
+          "type": "counter",
+          "value": 60
+        },
+        {
+          "dt": "2025-07-15T20:02:27.691Z",
+          "type": "counter",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-16T21:03:27.691Z",
+          "type": "counter",
+          "value": 90
+        },
+        {
+          "dt": "2025-07-17T22:04:27.691Z",
+          "type": "counter",
+          "value": 105
+        },
+        {
+          "dt": "2025-07-18T23:05:27.691Z",
+          "type": "counter",
+          "value": 120
+        },
+        {
+          "dt": "2025-07-19T16:58:27.691Z",
+          "type": "counter",
+          "value": 135
+        },
+        {
+          "dt": "2025-07-20T16:58:27.691Z",
+          "type": "counter",
+          "value": 150
+        },
+        {
+          "dt": "2025-07-21T16:58:27.691Z",
+          "type": "counter",
+          "value": 165
+        },
+        {
+          "dt": "2025-07-22T16:58:27.691Z",
+          "type": "counter",
+          "value": 180
+        },
+        {
+          "dt": "2025-07-23T16:58:27.691Z",
+          "type": "counter",
+          "value": 195
+        },
+        {
+          "dt": "2025-07-24T16:58:27.691Z",
+          "type": "counter",
+          "value": 210
+        },
+        {
+          "dt": "2025-07-25T16:58:27.691Z",
+          "type": "counter",
+          "value": 225
+        },
+        {
+          "dt": "2025-07-26T16:58:27.691Z",
+          "type": "counter",
+          "value": 240
+        },
+        {
+          "dt": "2025-07-27T16:58:27.691Z",
+          "type": "counter",
+          "value": 255
+        },
+        {
+          "dt": "2025-07-28T16:58:27.691Z",
+          "type": "counter",
+          "value": 270
+        },
+        {
+          "dt": "2025-07-29T16:58:27.691Z",
+          "type": "counter",
+          "value": 285
+        },
+        {
+          "dt": "2025-07-30T16:58:27.691Z",
+          "type": "counter",
+          "value": 300
+        }
+      ],
+      "type": "counter",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "activity_interaction_count"
+        }
+      ],
+      "unit": "interactions"
+    },
+    {
+      "name": "preference_agreement_score",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.691Z",
+          "type": "gauge",
+          "value": 60
+        },
+        {
+          "dt": "2025-07-12T16:59:27.691Z",
+          "type": "gauge",
+          "value": 65
+        },
+        {
+          "dt": "2025-07-13T18:00:27.691Z",
+          "type": "gauge",
+          "value": 70
+        },
+        {
+          "dt": "2025-07-14T19:01:27.691Z",
+          "type": "gauge",
+          "value": 72
+        },
+        {
+          "dt": "2025-07-15T20:02:27.691Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-16T21:03:27.691Z",
+          "type": "gauge",
+          "value": 77
+        },
+        {
+          "dt": "2025-07-17T22:04:27.691Z",
+          "type": "gauge",
+          "value": 80
+        },
+        {
+          "dt": "2025-07-18T23:05:27.691Z",
+          "type": "gauge",
+          "value": 82
+        },
+        {
+          "dt": "2025-07-19T16:58:27.691Z",
+          "type": "gauge",
+          "value": 84
+        },
+        {
+          "dt": "2025-07-20T16:58:27.691Z",
+          "type": "gauge",
+          "value": 83
+        },
+        {
+          "dt": "2025-07-21T16:58:27.691Z",
+          "type": "gauge",
+          "value": 85
+        },
+        {
+          "dt": "2025-07-22T16:58:27.691Z",
+          "type": "gauge",
+          "value": 86
+        },
+        {
+          "dt": "2025-07-23T16:58:27.691Z",
+          "type": "gauge",
+          "value": 87
+        },
+        {
+          "dt": "2025-07-24T16:58:27.691Z",
+          "type": "gauge",
+          "value": 88
+        },
+        {
+          "dt": "2025-07-25T16:58:27.691Z",
+          "type": "gauge",
+          "value": 89
+        },
+        {
+          "dt": "2025-07-26T16:58:27.691Z",
+          "type": "gauge",
+          "value": 90
+        },
+        {
+          "dt": "2025-07-27T16:58:27.691Z",
+          "type": "gauge",
+          "value": 91
+        },
+        {
+          "dt": "2025-07-28T16:58:27.691Z",
+          "type": "gauge",
+          "value": 92
+        },
+        {
+          "dt": "2025-07-29T16:58:27.691Z",
+          "type": "gauge",
+          "value": 93
+        },
+        {
+          "dt": "2025-07-30T16:58:27.691Z",
+          "type": "gauge",
+          "value": 94
+        }
+      ],
+      "type": "gauge",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "preference_agreement_score"
+        }
+      ],
+      "unit": "percentage"
+    }
+  ],
+  "b7e82533-e0ed-4832-97e2-95764d4ea912": [
+    {
+      "name": "agent_workout_sessions_total",
+      "data": [
+        {
+          "dt": "2025-08-10T16:58:27.699Z",
+          "type": "counter",
+          "value": 5
+        },
+        {
+          "dt": "2025-08-10T16:57:37.699Z",
+          "type": "counter",
+          "value": 4
+        },
+        {
+          "dt": "2025-08-10T16:56:47.699Z",
+          "type": "counter",
+          "value": 3
+        },
+        {
+          "dt": "2025-08-10T16:55:57.699Z",
+          "type": "counter",
+          "value": 2
+        },
+        {
+          "dt": "2025-08-10T16:55:07.699Z",
+          "type": "counter",
+          "value": 1
+        },
+        {
+          "dt": "2025-08-10T16:54:17.699Z",
+          "type": "counter",
+          "value": 0.5
+        },
+        {
+          "dt": "2025-08-10T16:53:27.699Z",
+          "type": "counter",
+          "value": 0.4
+        },
+        {
+          "dt": "2025-08-10T16:52:37.699Z",
+          "type": "counter",
+          "value": 0.3
+        },
+        {
+          "dt": "2025-08-10T16:51:47.699Z",
+          "type": "counter",
+          "value": 0.2
+        },
+        {
+          "dt": "2025-08-10T16:50:57.699Z",
+          "type": "counter",
+          "value": 0.1
+        },
+        {
+          "dt": "2025-08-10T16:50:07.699Z",
+          "type": "counter",
+          "value": 0.05
+        },
+        {
+          "dt": "2025-08-10T16:49:17.699Z",
+          "type": "counter",
+          "value": 0.04
+        },
+        {
+          "dt": "2025-08-10T16:48:27.699Z",
+          "type": "counter",
+          "value": 0.03
+        },
+        {
+          "dt": "2025-08-10T16:47:37.699Z",
+          "type": "counter",
+          "value": 0.02
+        },
+        {
+          "dt": "2025-08-10T16:46:47.699Z",
+          "type": "counter",
+          "value": 0.01
+        },
+        {
+          "dt": "2025-08-10T16:45:57.699Z",
+          "type": "counter",
+          "value": 1
+        },
+        {
+          "dt": "2025-08-10T16:45:07.699Z",
+          "type": "counter",
+          "value": 2
+        },
+        {
+          "dt": "2025-08-10T16:44:17.699Z",
+          "type": "counter",
+          "value": 3
+        },
+        {
+          "dt": "2025-08-10T16:43:27.699Z",
+          "type": "counter",
+          "value": 4
+        },
+        {
+          "dt": "2025-08-10T16:42:37.699Z",
+          "type": "counter",
+          "value": 5
+        }
+      ],
+      "type": "counter",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "sessions"
+    },
+    {
+      "name": "agent_workout_compliance_gauge",
+      "data": [
+        {
+          "dt": "2025-08-10T16:58:27.699Z",
+          "type": "gauge",
+          "value": 70
+        },
+        {
+          "dt": "2025-08-10T16:57:27.699Z",
+          "type": "gauge",
+          "value": 68
+        },
+        {
+          "dt": "2025-08-10T16:56:27.699Z",
+          "type": "gauge",
+          "value": 66
+        },
+        {
+          "dt": "2025-08-10T16:55:27.699Z",
+          "type": "gauge",
+          "value": 65
+        },
+        {
+          "dt": "2025-08-10T16:54:27.699Z",
+          "type": "gauge",
+          "value": 63
+        },
+        {
+          "dt": "2025-08-10T16:53:27.699Z",
+          "type": "gauge",
+          "value": 61
+        },
+        {
+          "dt": "2025-08-10T16:52:27.699Z",
+          "type": "gauge",
+          "value": 60
+        },
+        {
+          "dt": "2025-08-10T16:51:27.699Z",
+          "type": "gauge",
+          "value": 59
+        },
+        {
+          "dt": "2025-08-10T16:50:27.699Z",
+          "type": "gauge",
+          "value": 58
+        },
+        {
+          "dt": "2025-08-10T16:49:27.699Z",
+          "type": "gauge",
+          "value": 57
+        },
+        {
+          "dt": "2025-08-10T16:48:27.699Z",
+          "type": "gauge",
+          "value": 55
+        },
+        {
+          "dt": "2025-08-10T16:47:27.699Z",
+          "type": "gauge",
+          "value": 54
+        },
+        {
+          "dt": "2025-08-10T16:46:27.699Z",
+          "type": "gauge",
+          "value": 53
+        },
+        {
+          "dt": "2025-08-10T16:45:27.699Z",
+          "type": "gauge",
+          "value": 52
+        },
+        {
+          "dt": "2025-08-10T16:44:27.699Z",
+          "type": "gauge",
+          "value": 50
+        },
+        {
+          "dt": "2025-08-10T16:43:27.699Z",
+          "type": "gauge",
+          "value": 49
+        },
+        {
+          "dt": "2025-08-10T16:42:27.699Z",
+          "type": "gauge",
+          "value": 48
+        },
+        {
+          "dt": "2025-08-10T16:41:27.699Z",
+          "type": "gauge",
+          "value": 47
+        },
+        {
+          "dt": "2025-08-10T16:40:27.699Z",
+          "type": "gauge",
+          "value": 45
+        },
+        {
+          "dt": "2025-08-10T16:39:27.699Z",
+          "type": "gauge",
+          "value": 44
+        }
+      ],
+      "type": "gauge",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "percentage"
+    },
+    {
+      "name": "social_support_interaction_total",
+      "data": [
+        {
+          "dt": "2025-08-10T16:58:27.699Z",
+          "type": "counter",
+          "value": 12
+        },
+        {
+          "dt": "2025-08-10T16:57:27.699Z",
+          "type": "counter",
+          "value": 11
+        },
+        {
+          "dt": "2025-08-10T16:56:27.699Z",
+          "type": "counter",
+          "value": 10
+        },
+        {
+          "dt": "2025-08-10T16:55:27.699Z",
+          "type": "counter",
+          "value": 9
+        },
+        {
+          "dt": "2025-08-10T16:54:27.699Z",
+          "type": "counter",
+          "value": 8
+        },
+        {
+          "dt": "2025-08-10T16:53:27.699Z",
+          "type": "counter",
+          "value": 7
+        },
+        {
+          "dt": "2025-08-10T16:52:27.699Z",
+          "type": "counter",
+          "value": 6
+        },
+        {
+          "dt": "2025-08-10T16:51:27.699Z",
+          "type": "counter",
+          "value": 5
+        },
+        {
+          "dt": "2025-08-10T16:50:27.699Z",
+          "type": "counter",
+          "value": 4
+        },
+        {
+          "dt": "2025-08-10T16:49:27.699Z",
+          "type": "counter",
+          "value": 3
+        },
+        {
+          "dt": "2025-08-10T16:48:27.699Z",
+          "type": "counter",
+          "value": 2
+        },
+        {
+          "dt": "2025-08-10T16:47:27.699Z",
+          "type": "counter",
+          "value": 1
+        },
+        {
+          "dt": "2025-08-10T16:46:27.699Z",
+          "type": "counter",
+          "value": 0.5
+        },
+        {
+          "dt": "2025-08-10T16:45:27.699Z",
+          "type": "counter",
+          "value": 0.4
+        },
+        {
+          "dt": "2025-08-10T16:44:27.699Z",
+          "type": "counter",
+          "value": 0.3
+        },
+        {
+          "dt": "2025-08-10T16:43:27.699Z",
+          "type": "counter",
+          "value": 0.2
+        },
+        {
+          "dt": "2025-08-10T16:42:27.699Z",
+          "type": "counter",
+          "value": 0.1
+        },
+        {
+          "dt": "2025-08-10T16:41:27.699Z",
+          "type": "counter",
+          "value": 0.05
+        },
+        {
+          "dt": "2025-08-10T16:40:27.699Z",
+          "type": "counter",
+          "value": 0.03
+        },
+        {
+          "dt": "2025-08-10T16:39:27.699Z",
+          "type": "counter",
+          "value": 0.02
+        }
+      ],
+      "type": "counter",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        },
+        {
+          "key": "partner_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "interactions"
+    },
+    {
+      "name": "average_response_time_seconds",
+      "data": [
+        {
+          "dt": "2025-08-10T16:58:27.699Z",
+          "type": "summary",
+          "count": 20,
+          "sum": 300,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 15
+            },
+            {
+              "quantile": 0.9,
+              "value": 25
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:57:27.699Z",
+          "type": "summary",
+          "count": 19,
+          "sum": 285,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 14
+            },
+            {
+              "quantile": 0.9,
+              "value": 24
+            },
+            {
+              "quantile": 0.99,
+              "value": 29
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:56:27.699Z",
+          "type": "summary",
+          "count": 18,
+          "sum": 270,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 13
+            },
+            {
+              "quantile": 0.9,
+              "value": 23
+            },
+            {
+              "quantile": 0.99,
+              "value": 28
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:55:27.699Z",
+          "type": "summary",
+          "count": 17,
+          "sum": 255,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 12
+            },
+            {
+              "quantile": 0.9,
+              "value": 22
+            },
+            {
+              "quantile": 0.99,
+              "value": 27
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:54:27.699Z",
+          "type": "summary",
+          "count": 16,
+          "sum": 240,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11
+            },
+            {
+              "quantile": 0.9,
+              "value": 21
+            },
+            {
+              "quantile": 0.99,
+              "value": 26
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:53:27.699Z",
+          "type": "summary",
+          "count": 15,
+          "sum": 225,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 10
+            },
+            {
+              "quantile": 0.9,
+              "value": 20
+            },
+            {
+              "quantile": 0.99,
+              "value": 25
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:52:27.699Z",
+          "type": "summary",
+          "count": 14,
+          "sum": 210,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 9
+            },
+            {
+              "quantile": 0.9,
+              "value": 19
+            },
+            {
+              "quantile": 0.99,
+              "value": 24
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:51:27.699Z",
+          "type": "summary",
+          "count": 13,
+          "sum": 195,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 8
+            },
+            {
+              "quantile": 0.9,
+              "value": 18
+            },
+            {
+              "quantile": 0.99,
+              "value": 23
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:50:27.699Z",
+          "type": "summary",
+          "count": 12,
+          "sum": 180,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 7
+            },
+            {
+              "quantile": 0.9,
+              "value": 17
+            },
+            {
+              "quantile": 0.99,
+              "value": 22
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:49:27.699Z",
+          "type": "summary",
+          "count": 11,
+          "sum": 165,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 6
+            },
+            {
+              "quantile": 0.9,
+              "value": 16
+            },
+            {
+              "quantile": 0.99,
+              "value": 21
+            }
+          ]
+        }
+      ],
+      "type": "summary",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "seconds"
+    },
+    {
+      "name": "workout_session_duration_seconds",
+      "data": [
+        {
+          "dt": "2025-08-10T16:58:27.699Z",
+          "type": "histogram",
+          "count": 15,
+          "sum": 7500,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 8
+            },
+            {
+              "le": 1200,
+              "count": 12
+            },
+            {
+              "le": 1800,
+              "count": 14
+            },
+            {
+              "le": 2400,
+              "count": 15
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:57:27.699Z",
+          "type": "histogram",
+          "count": 14,
+          "sum": 7000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 7
+            },
+            {
+              "le": 1200,
+              "count": 11
+            },
+            {
+              "le": 1800,
+              "count": 13
+            },
+            {
+              "le": 2400,
+              "count": 14
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:56:27.699Z",
+          "type": "histogram",
+          "count": 13,
+          "sum": 6500,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 6
+            },
+            {
+              "le": 1200,
+              "count": 10
+            },
+            {
+              "le": 1800,
+              "count": 12
+            },
+            {
+              "le": 2400,
+              "count": 13
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:55:27.699Z",
+          "type": "histogram",
+          "count": 12,
+          "sum": 6000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 6
+            },
+            {
+              "le": 1200,
+              "count": 9
+            },
+            {
+              "le": 1800,
+              "count": 11
+            },
+            {
+              "le": 2400,
+              "count": 12
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:54:27.699Z",
+          "type": "histogram",
+          "count": 11,
+          "sum": 5500,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 5
+            },
+            {
+              "le": 1200,
+              "count": 9
+            },
+            {
+              "le": 1800,
+              "count": 10
+            },
+            {
+              "le": 2400,
+              "count": 11
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:53:27.699Z",
+          "type": "histogram",
+          "count": 10,
+          "sum": 5000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 5
+            },
+            {
+              "le": 1200,
+              "count": 8
+            },
+            {
+              "le": 1800,
+              "count": 10
+            },
+            {
+              "le": 2400,
+              "count": 10
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:52:27.699Z",
+          "type": "histogram",
+          "count": 9,
+          "sum": 4500,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 4
+            },
+            {
+              "le": 1200,
+              "count": 8
+            },
+            {
+              "le": 1800,
+              "count": 9
+            },
+            {
+              "le": 2400,
+              "count": 9
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:51:27.699Z",
+          "type": "histogram",
+          "count": 8,
+          "sum": 4000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 4
+            },
+            {
+              "le": 1200,
+              "count": 7
+            },
+            {
+              "le": 1800,
+              "count": 8
+            },
+            {
+              "le": 2400,
+              "count": 8
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:50:27.699Z",
+          "type": "histogram",
+          "count": 7,
+          "sum": 3500,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 3
+            },
+            {
+              "le": 1200,
+              "count": 7
+            },
+            {
+              "le": 1800,
+              "count": 7
+            },
+            {
+              "le": 2400,
+              "count": 7
+            }
+          ]
+        },
+        {
+          "dt": "2025-08-10T16:49:27.699Z",
+          "type": "histogram",
+          "count": 6,
+          "sum": 3000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 3
+            },
+            {
+              "le": 1200,
+              "count": 6
+            },
+            {
+              "le": 1800,
+              "count": 6
+            },
+            {
+              "le": 2400,
+              "count": 6
+            }
+          ]
+        }
+      ],
+      "type": "histogram",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "seconds"
+    }
+  ],
+  "696f480a-f2e9-46f0-834b-006599a55f38": [
+    {
+      "name": "agent_workout_sessions_total",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.695Z",
+          "type": "counter",
+          "value": 4
+        },
+        {
+          "dt": "2025-07-12T16:58:27.695Z",
+          "type": "counter",
+          "value": 8
+        },
+        {
+          "dt": "2025-07-13T16:58:27.695Z",
+          "type": "counter",
+          "value": 12
+        },
+        {
+          "dt": "2025-07-14T16:58:27.695Z",
+          "type": "counter",
+          "value": 16
+        },
+        {
+          "dt": "2025-07-15T16:58:27.695Z",
+          "type": "counter",
+          "value": 20
+        },
+        {
+          "dt": "2025-07-16T16:58:27.695Z",
+          "type": "counter",
+          "value": 24
+        },
+        {
+          "dt": "2025-07-17T16:58:27.695Z",
+          "type": "counter",
+          "value": 28
+        },
+        {
+          "dt": "2025-07-18T16:58:27.695Z",
+          "type": "counter",
+          "value": 32
+        },
+        {
+          "dt": "2025-07-19T16:58:27.695Z",
+          "type": "counter",
+          "value": 36
+        },
+        {
+          "dt": "2025-07-20T16:58:27.695Z",
+          "type": "counter",
+          "value": 40
+        },
+        {
+          "dt": "2025-07-21T16:58:27.695Z",
+          "type": "counter",
+          "value": 44
+        },
+        {
+          "dt": "2025-07-22T16:58:27.695Z",
+          "type": "counter",
+          "value": 48
+        },
+        {
+          "dt": "2025-07-23T16:58:27.695Z",
+          "type": "counter",
+          "value": 52
+        },
+        {
+          "dt": "2025-07-24T16:58:27.695Z",
+          "type": "counter",
+          "value": 56
+        },
+        {
+          "dt": "2025-07-25T16:58:27.695Z",
+          "type": "counter",
+          "value": 60
+        },
+        {
+          "dt": "2025-07-26T16:58:27.695Z",
+          "type": "counter",
+          "value": 64
+        },
+        {
+          "dt": "2025-07-27T16:58:27.695Z",
+          "type": "counter",
+          "value": 68
+        },
+        {
+          "dt": "2025-07-28T16:58:27.695Z",
+          "type": "counter",
+          "value": 72
+        },
+        {
+          "dt": "2025-07-29T16:58:27.695Z",
+          "type": "counter",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-30T16:58:27.695Z",
+          "type": "counter",
+          "value": 80
+        }
+      ],
+      "type": "counter",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "sessions"
+    },
+    {
+      "name": "agent_workout_compliance_gauge",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.695Z",
+          "type": "gauge",
+          "value": 65
+        },
+        {
+          "dt": "2025-07-12T16:58:27.695Z",
+          "type": "gauge",
+          "value": 66
+        },
+        {
+          "dt": "2025-07-13T16:58:27.695Z",
+          "type": "gauge",
+          "value": 66.5
+        },
+        {
+          "dt": "2025-07-14T16:58:27.695Z",
+          "type": "gauge",
+          "value": 67
+        },
+        {
+          "dt": "2025-07-15T16:58:27.695Z",
+          "type": "gauge",
+          "value": 67.5
+        },
+        {
+          "dt": "2025-07-16T16:58:27.695Z",
+          "type": "gauge",
+          "value": 68
+        },
+        {
+          "dt": "2025-07-17T16:58:27.695Z",
+          "type": "gauge",
+          "value": 68.2
+        },
+        {
+          "dt": "2025-07-18T16:58:27.695Z",
+          "type": "gauge",
+          "value": 68.4
+        },
+        {
+          "dt": "2025-07-19T16:58:27.695Z",
+          "type": "gauge",
+          "value": 68.3
+        },
+        {
+          "dt": "2025-07-20T16:58:27.695Z",
+          "type": "gauge",
+          "value": 68.1
+        },
+        {
+          "dt": "2025-07-21T16:58:27.695Z",
+          "type": "gauge",
+          "value": 68.5
+        },
+        {
+          "dt": "2025-07-22T16:58:27.695Z",
+          "type": "gauge",
+          "value": 68.7
+        },
+        {
+          "dt": "2025-07-23T16:58:27.695Z",
+          "type": "gauge",
+          "value": 68.9
+        },
+        {
+          "dt": "2025-07-24T16:58:27.695Z",
+          "type": "gauge",
+          "value": 69
+        },
+        {
+          "dt": "2025-07-25T16:58:27.695Z",
+          "type": "gauge",
+          "value": 69.2
+        },
+        {
+          "dt": "2025-07-26T16:58:27.695Z",
+          "type": "gauge",
+          "value": 69.1
+        },
+        {
+          "dt": "2025-07-27T16:58:27.695Z",
+          "type": "gauge",
+          "value": 69.3
+        },
+        {
+          "dt": "2025-07-28T16:58:27.695Z",
+          "type": "gauge",
+          "value": 69.5
+        },
+        {
+          "dt": "2025-07-29T16:58:27.695Z",
+          "type": "gauge",
+          "value": 69.4
+        },
+        {
+          "dt": "2025-07-30T16:58:27.695Z",
+          "type": "gauge",
+          "value": 69.6
+        }
+      ],
+      "type": "gauge",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "percentage"
+    },
+    {
+      "name": "social_support_interaction_total",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.695Z",
+          "type": "counter",
+          "value": 0.5
+        },
+        {
+          "dt": "2025-07-12T16:58:27.695Z",
+          "type": "counter",
+          "value": 1
+        },
+        {
+          "dt": "2025-07-13T16:58:27.695Z",
+          "type": "counter",
+          "value": 1.5
+        },
+        {
+          "dt": "2025-07-14T16:58:27.695Z",
+          "type": "counter",
+          "value": 2
+        },
+        {
+          "dt": "2025-07-15T16:58:27.695Z",
+          "type": "counter",
+          "value": 2.5
+        },
+        {
+          "dt": "2025-07-16T16:58:27.695Z",
+          "type": "counter",
+          "value": 3
+        },
+        {
+          "dt": "2025-07-17T16:58:27.695Z",
+          "type": "counter",
+          "value": 3.5
+        },
+        {
+          "dt": "2025-07-18T16:58:27.695Z",
+          "type": "counter",
+          "value": 4
+        },
+        {
+          "dt": "2025-07-19T16:58:27.695Z",
+          "type": "counter",
+          "value": 4.5
+        },
+        {
+          "dt": "2025-07-20T16:58:27.695Z",
+          "type": "counter",
+          "value": 5
+        },
+        {
+          "dt": "2025-07-21T16:58:27.695Z",
+          "type": "counter",
+          "value": 5.5
+        },
+        {
+          "dt": "2025-07-22T16:58:27.695Z",
+          "type": "counter",
+          "value": 6
+        },
+        {
+          "dt": "2025-07-23T16:58:27.695Z",
+          "type": "counter",
+          "value": 6.5
+        },
+        {
+          "dt": "2025-07-24T16:58:27.695Z",
+          "type": "counter",
+          "value": 7
+        },
+        {
+          "dt": "2025-07-25T16:58:27.695Z",
+          "type": "counter",
+          "value": 7.5
+        },
+        {
+          "dt": "2025-07-26T16:58:27.695Z",
+          "type": "counter",
+          "value": 8
+        },
+        {
+          "dt": "2025-07-27T16:58:27.695Z",
+          "type": "counter",
+          "value": 8.5
+        },
+        {
+          "dt": "2025-07-28T16:58:27.695Z",
+          "type": "counter",
+          "value": 9
+        },
+        {
+          "dt": "2025-07-29T16:58:27.695Z",
+          "type": "counter",
+          "value": 9.5
+        },
+        {
+          "dt": "2025-07-30T16:58:27.695Z",
+          "type": "counter",
+          "value": 10
+        }
+      ],
+      "type": "counter",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        },
+        {
+          "key": "partner_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "interactions"
+    },
+    {
+      "name": "average_response_time_seconds",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.695Z",
+          "type": "summary",
+          "count": 1,
+          "sum": 240,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-12T16:58:27.695Z",
+          "type": "summary",
+          "count": 2,
+          "sum": 480,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-13T16:58:27.695Z",
+          "type": "summary",
+          "count": 3,
+          "sum": 720,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-14T16:58:27.695Z",
+          "type": "summary",
+          "count": 4,
+          "sum": 960,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-15T16:58:27.695Z",
+          "type": "summary",
+          "count": 5,
+          "sum": 1200,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-16T16:58:27.695Z",
+          "type": "summary",
+          "count": 6,
+          "sum": 1440,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-17T16:58:27.695Z",
+          "type": "summary",
+          "count": 7,
+          "sum": 1680,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-18T16:58:27.695Z",
+          "type": "summary",
+          "count": 8,
+          "sum": 1920,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-19T16:58:27.695Z",
+          "type": "summary",
+          "count": 9,
+          "sum": 2160,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-20T16:58:27.695Z",
+          "type": "summary",
+          "count": 10,
+          "sum": 2400,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-21T16:58:27.695Z",
+          "type": "summary",
+          "count": 11,
+          "sum": 2640,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-22T16:58:27.695Z",
+          "type": "summary",
+          "count": 12,
+          "sum": 2880,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-23T16:58:27.695Z",
+          "type": "summary",
+          "count": 13,
+          "sum": 3120,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-24T16:58:27.695Z",
+          "type": "summary",
+          "count": 14,
+          "sum": 3360,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-25T16:58:27.695Z",
+          "type": "summary",
+          "count": 15,
+          "sum": 3600,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-26T16:58:27.695Z",
+          "type": "summary",
+          "count": 16,
+          "sum": 3840,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-27T16:58:27.695Z",
+          "type": "summary",
+          "count": 17,
+          "sum": 4080,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-28T16:58:27.695Z",
+          "type": "summary",
+          "count": 18,
+          "sum": 4320,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-29T16:58:27.695Z",
+          "type": "summary",
+          "count": 19,
+          "sum": 4560,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 240
+            },
+            {
+              "quantile": 0.9,
+              "value": 240
+            },
+            {
+              "quantile": 0.99,
+              "value": 240
+            }
+          ]
+        }
+      ],
+      "type": "summary",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "seconds"
+    },
+    {
+      "name": "workout_session_duration_seconds",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.695Z",
+          "type": "histogram",
+          "count": 5,
+          "sum": 5000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 900,
+              "count": 2
+            },
+            {
+              "le": 1200,
+              "count": 3
+            },
+            {
+              "le": 1800,
+              "count": 4
+            },
+            {
+              "le": 2400,
+              "count": 5
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-12T16:58:27.695Z",
+          "type": "histogram",
+          "count": 10,
+          "sum": 10000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 2
+            },
+            {
+              "le": 900,
+              "count": 4
+            },
+            {
+              "le": 1200,
+              "count": 6
+            },
+            {
+              "le": 1800,
+              "count": 8
+            },
+            {
+              "le": 2400,
+              "count": 10
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-13T16:58:27.695Z",
+          "type": "histogram",
+          "count": 15,
+          "sum": 15000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 3
+            },
+            {
+              "le": 900,
+              "count": 6
+            },
+            {
+              "le": 1200,
+              "count": 9
+            },
+            {
+              "le": 1800,
+              "count": 12
+            },
+            {
+              "le": 2400,
+              "count": 15
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-14T16:58:27.695Z",
+          "type": "histogram",
+          "count": 20,
+          "sum": 20000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 4
+            },
+            {
+              "le": 900,
+              "count": 8
+            },
+            {
+              "le": 1200,
+              "count": 12
+            },
+            {
+              "le": 1800,
+              "count": 16
+            },
+            {
+              "le": 2400,
+              "count": 20
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-15T16:58:27.695Z",
+          "type": "histogram",
+          "count": 25,
+          "sum": 25000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 5
+            },
+            {
+              "le": 900,
+              "count": 10
+            },
+            {
+              "le": 1200,
+              "count": 15
+            },
+            {
+              "le": 1800,
+              "count": 20
+            },
+            {
+              "le": 2400,
+              "count": 25
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-16T16:58:27.695Z",
+          "type": "histogram",
+          "count": 30,
+          "sum": 30000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 6
+            },
+            {
+              "le": 900,
+              "count": 12
+            },
+            {
+              "le": 1200,
+              "count": 18
+            },
+            {
+              "le": 1800,
+              "count": 24
+            },
+            {
+              "le": 2400,
+              "count": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-17T16:58:27.695Z",
+          "type": "histogram",
+          "count": 35,
+          "sum": 35000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 7
+            },
+            {
+              "le": 900,
+              "count": 14
+            },
+            {
+              "le": 1200,
+              "count": 21
+            },
+            {
+              "le": 1800,
+              "count": 28
+            },
+            {
+              "le": 2400,
+              "count": 35
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-18T16:58:27.695Z",
+          "type": "histogram",
+          "count": 40,
+          "sum": 40000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 8
+            },
+            {
+              "le": 900,
+              "count": 16
+            },
+            {
+              "le": 1200,
+              "count": 24
+            },
+            {
+              "le": 1800,
+              "count": 32
+            },
+            {
+              "le": 2400,
+              "count": 40
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-19T16:58:27.695Z",
+          "type": "histogram",
+          "count": 45,
+          "sum": 45000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 9
+            },
+            {
+              "le": 900,
+              "count": 18
+            },
+            {
+              "le": 1200,
+              "count": 27
+            },
+            {
+              "le": 1800,
+              "count": 36
+            },
+            {
+              "le": 2400,
+              "count": 45
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-20T16:58:27.695Z",
+          "type": "histogram",
+          "count": 50,
+          "sum": 50000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 10
+            },
+            {
+              "le": 900,
+              "count": 20
+            },
+            {
+              "le": 1200,
+              "count": 30
+            },
+            {
+              "le": 1800,
+              "count": 40
+            },
+            {
+              "le": 2400,
+              "count": 50
+            }
+          ]
+        }
+      ],
+      "type": "histogram",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "seconds"
+    }
+  ],
+  "ddfb2356-9c32-4738-af88-f996e45254f9": [
+    {
+      "name": "agent_workout_sessions_total",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.698Z",
+          "type": "counter",
+          "value": 1
+        },
+        {
+          "dt": "2025-07-11T16:59:27.698Z",
+          "type": "counter",
+          "value": 2
+        },
+        {
+          "dt": "2025-07-11T17:00:27.698Z",
+          "type": "counter",
+          "value": 3
+        },
+        {
+          "dt": "2025-07-11T17:01:27.698Z",
+          "type": "counter",
+          "value": 4
+        },
+        {
+          "dt": "2025-07-11T17:02:27.698Z",
+          "type": "counter",
+          "value": 5
+        },
+        {
+          "dt": "2025-07-11T17:03:27.698Z",
+          "type": "counter",
+          "value": 6
+        },
+        {
+          "dt": "2025-07-11T17:04:27.698Z",
+          "type": "counter",
+          "value": 7
+        },
+        {
+          "dt": "2025-07-11T17:05:27.698Z",
+          "type": "counter",
+          "value": 8
+        },
+        {
+          "dt": "2025-07-11T17:06:27.698Z",
+          "type": "counter",
+          "value": 9
+        },
+        {
+          "dt": "2025-07-11T17:07:27.698Z",
+          "type": "counter",
+          "value": 10
+        },
+        {
+          "dt": "2025-07-11T17:08:27.698Z",
+          "type": "counter",
+          "value": 11
+        },
+        {
+          "dt": "2025-07-11T17:09:27.698Z",
+          "type": "counter",
+          "value": 12
+        },
+        {
+          "dt": "2025-07-11T17:10:27.698Z",
+          "type": "counter",
+          "value": 13
+        },
+        {
+          "dt": "2025-07-11T17:11:27.698Z",
+          "type": "counter",
+          "value": 14
+        },
+        {
+          "dt": "2025-07-11T17:12:27.698Z",
+          "type": "counter",
+          "value": 15
+        },
+        {
+          "dt": "2025-07-11T17:13:27.698Z",
+          "type": "counter",
+          "value": 16
+        },
+        {
+          "dt": "2025-07-11T17:14:27.698Z",
+          "type": "counter",
+          "value": 17
+        },
+        {
+          "dt": "2025-07-11T17:15:27.698Z",
+          "type": "counter",
+          "value": 18
+        },
+        {
+          "dt": "2025-07-11T17:16:27.698Z",
+          "type": "counter",
+          "value": 19
+        },
+        {
+          "dt": "2025-07-11T17:17:27.698Z",
+          "type": "counter",
+          "value": 20
+        }
+      ],
+      "type": "counter",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "sessions"
+    },
+    {
+      "name": "agent_workout_compliance_gauge",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.698Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T17:00:27.698Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:02:27.698Z",
+          "type": "gauge",
+          "value": 74
+        },
+        {
+          "dt": "2025-07-11T17:04:27.698Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:06:27.698Z",
+          "type": "gauge",
+          "value": 77
+        },
+        {
+          "dt": "2025-07-11T17:08:27.698Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T17:10:27.698Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:12:27.698Z",
+          "type": "gauge",
+          "value": 74
+        },
+        {
+          "dt": "2025-07-11T17:14:27.698Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T17:16:27.698Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:18:27.698Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T17:20:27.698Z",
+          "type": "gauge",
+          "value": 74
+        },
+        {
+          "dt": "2025-07-11T17:22:27.698Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:24:27.698Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T17:26:27.698Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:28:27.698Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T17:30:27.698Z",
+          "type": "gauge",
+          "value": 74
+        },
+        {
+          "dt": "2025-07-11T17:32:27.698Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:34:27.698Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T17:36:27.698Z",
+          "type": "gauge",
+          "value": 76
+        }
+      ],
+      "type": "gauge",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "%"
+    },
+    {
+      "name": "social_support_interaction_total",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.698Z",
+          "type": "counter",
+          "value": 1
+        },
+        {
+          "dt": "2025-07-11T17:01:27.698Z",
+          "type": "counter",
+          "value": 2
+        },
+        {
+          "dt": "2025-07-11T17:04:27.698Z",
+          "type": "counter",
+          "value": 3
+        },
+        {
+          "dt": "2025-07-11T17:07:27.698Z",
+          "type": "counter",
+          "value": 4
+        },
+        {
+          "dt": "2025-07-11T17:10:27.698Z",
+          "type": "counter",
+          "value": 5
+        },
+        {
+          "dt": "2025-07-11T17:13:27.698Z",
+          "type": "counter",
+          "value": 6
+        },
+        {
+          "dt": "2025-07-11T17:16:27.698Z",
+          "type": "counter",
+          "value": 7
+        },
+        {
+          "dt": "2025-07-11T17:19:27.698Z",
+          "type": "counter",
+          "value": 8
+        },
+        {
+          "dt": "2025-07-11T17:22:27.698Z",
+          "type": "counter",
+          "value": 9
+        },
+        {
+          "dt": "2025-07-11T17:25:27.698Z",
+          "type": "counter",
+          "value": 10
+        },
+        {
+          "dt": "2025-07-11T17:28:27.698Z",
+          "type": "counter",
+          "value": 11
+        },
+        {
+          "dt": "2025-07-11T17:31:27.698Z",
+          "type": "counter",
+          "value": 12
+        },
+        {
+          "dt": "2025-07-11T17:34:27.698Z",
+          "type": "counter",
+          "value": 13
+        },
+        {
+          "dt": "2025-07-11T17:37:27.698Z",
+          "type": "counter",
+          "value": 14
+        },
+        {
+          "dt": "2025-07-11T17:40:27.698Z",
+          "type": "counter",
+          "value": 15
+        },
+        {
+          "dt": "2025-07-11T17:43:27.698Z",
+          "type": "counter",
+          "value": 16
+        },
+        {
+          "dt": "2025-07-11T17:46:27.698Z",
+          "type": "counter",
+          "value": 17
+        },
+        {
+          "dt": "2025-07-11T17:49:27.698Z",
+          "type": "counter",
+          "value": 18
+        },
+        {
+          "dt": "2025-07-11T17:52:27.698Z",
+          "type": "counter",
+          "value": 19
+        },
+        {
+          "dt": "2025-07-11T17:55:27.698Z",
+          "type": "counter",
+          "value": 20
+        }
+      ],
+      "type": "counter",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        },
+        {
+          "key": "partner_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "interactions"
+    },
+    {
+      "name": "average_response_time_seconds",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.698Z",
+          "type": "summary",
+          "count": 1,
+          "sum": 30,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:00:27.698Z",
+          "type": "summary",
+          "count": 2,
+          "sum": 58,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 29
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 58
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:02:27.698Z",
+          "type": "summary",
+          "count": 3,
+          "sum": 86,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 29
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 86
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:04:27.698Z",
+          "type": "summary",
+          "count": 4,
+          "sum": 114,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 114
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:06:27.698Z",
+          "type": "summary",
+          "count": 5,
+          "sum": 142,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 142
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:08:27.698Z",
+          "type": "summary",
+          "count": 6,
+          "sum": 170,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 170
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:10:27.698Z",
+          "type": "summary",
+          "count": 7,
+          "sum": 198,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 198
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:12:27.698Z",
+          "type": "summary",
+          "count": 8,
+          "sum": 226,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 226
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:14:27.698Z",
+          "type": "summary",
+          "count": 9,
+          "sum": 254,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 254
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:16:27.698Z",
+          "type": "summary",
+          "count": 10,
+          "sum": 282,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 282
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:18:27.698Z",
+          "type": "summary",
+          "count": 11,
+          "sum": 310,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 310
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:20:27.698Z",
+          "type": "summary",
+          "count": 12,
+          "sum": 338,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 338
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:22:27.698Z",
+          "type": "summary",
+          "count": 13,
+          "sum": 366,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 366
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:24:27.698Z",
+          "type": "summary",
+          "count": 14,
+          "sum": 394,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 394
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:26:27.698Z",
+          "type": "summary",
+          "count": 15,
+          "sum": 422,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 422
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:28:27.698Z",
+          "type": "summary",
+          "count": 16,
+          "sum": 450,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 450
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:30:27.698Z",
+          "type": "summary",
+          "count": 17,
+          "sum": 478,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 478
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:32:27.698Z",
+          "type": "summary",
+          "count": 18,
+          "sum": 506,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 506
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:34:27.698Z",
+          "type": "summary",
+          "count": 19,
+          "sum": 534,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 534
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:36:27.698Z",
+          "type": "summary",
+          "count": 20,
+          "sum": 562,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 28.75
+            },
+            {
+              "quantile": 0.9,
+              "value": 58
+            },
+            {
+              "quantile": 0.99,
+              "value": 562
+            }
+          ]
+        }
+      ],
+      "type": "summary",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "seconds"
+    },
+    {
+      "name": "workout_session_duration_seconds",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.698Z",
+          "type": "histogram",
+          "count": 1,
+          "sum": 1800,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:00:27.698Z",
+          "type": "histogram",
+          "count": 2,
+          "sum": 3600,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:02:27.698Z",
+          "type": "histogram",
+          "count": 3,
+          "sum": 5400,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:04:27.698Z",
+          "type": "histogram",
+          "count": 4,
+          "sum": 7200,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 4
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:06:27.698Z",
+          "type": "histogram",
+          "count": 5,
+          "sum": 9000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 5
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:08:27.698Z",
+          "type": "histogram",
+          "count": 6,
+          "sum": 10800,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 6
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:10:27.698Z",
+          "type": "histogram",
+          "count": 7,
+          "sum": 12600,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 7
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:12:27.698Z",
+          "type": "histogram",
+          "count": 8,
+          "sum": 14400,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 8
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:14:27.698Z",
+          "type": "histogram",
+          "count": 9,
+          "sum": 16200,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 9
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:16:27.698Z",
+          "type": "histogram",
+          "count": 10,
+          "sum": 18000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 10
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:18:27.698Z",
+          "type": "histogram",
+          "count": 11,
+          "sum": 19800,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 11
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:20:27.698Z",
+          "type": "histogram",
+          "count": 12,
+          "sum": 21600,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 12
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:22:27.698Z",
+          "type": "histogram",
+          "count": 13,
+          "sum": 23400,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 13
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:24:27.698Z",
+          "type": "histogram",
+          "count": 14,
+          "sum": 25200,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 14
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:26:27.698Z",
+          "type": "histogram",
+          "count": 15,
+          "sum": 27000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 15
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:28:27.698Z",
+          "type": "histogram",
+          "count": 16,
+          "sum": 28800,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 16
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:30:27.698Z",
+          "type": "histogram",
+          "count": 17,
+          "sum": 30600,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 17
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:32:27.698Z",
+          "type": "histogram",
+          "count": 18,
+          "sum": 32400,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:34:27.698Z",
+          "type": "histogram",
+          "count": 19,
+          "sum": 34200,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 19
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:36:27.698Z",
+          "type": "histogram",
+          "count": 20,
+          "sum": 36000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 20
+            }
+          ]
+        }
+      ],
+      "type": "histogram",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "seconds"
+    },
+    {
+      "name": "motivation_level_score",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.698Z",
+          "type": "gauge",
+          "value": 70
+        },
+        {
+          "dt": "2025-07-11T17:00:27.698Z",
+          "type": "gauge",
+          "value": 72
+        },
+        {
+          "dt": "2025-07-11T17:02:27.698Z",
+          "type": "gauge",
+          "value": 74
+        },
+        {
+          "dt": "2025-07-11T17:04:27.698Z",
+          "type": "gauge",
+          "value": 73
+        },
+        {
+          "dt": "2025-07-11T17:06:27.698Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T17:08:27.698Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:10:27.698Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T17:12:27.698Z",
+          "type": "gauge",
+          "value": 77
+        },
+        {
+          "dt": "2025-07-11T17:14:27.698Z",
+          "type": "gauge",
+          "value": 78
+        },
+        {
+          "dt": "2025-07-11T17:16:27.698Z",
+          "type": "gauge",
+          "value": 77
+        },
+        {
+          "dt": "2025-07-11T17:18:27.698Z",
+          "type": "gauge",
+          "value": 79
+        },
+        {
+          "dt": "2025-07-11T17:20:27.698Z",
+          "type": "gauge",
+          "value": 80
+        },
+        {
+          "dt": "2025-07-11T17:22:27.698Z",
+          "type": "gauge",
+          "value": 81
+        },
+        {
+          "dt": "2025-07-11T17:24:27.698Z",
+          "type": "gauge",
+          "value": 80
+        },
+        {
+          "dt": "2025-07-11T17:26:27.698Z",
+          "type": "gauge",
+          "value": 82
+        },
+        {
+          "dt": "2025-07-11T17:28:27.698Z",
+          "type": "gauge",
+          "value": 83
+        },
+        {
+          "dt": "2025-07-11T17:30:27.698Z",
+          "type": "gauge",
+          "value": 82
+        },
+        {
+          "dt": "2025-07-11T17:32:27.698Z",
+          "type": "gauge",
+          "value": 84
+        },
+        {
+          "dt": "2025-07-11T17:34:27.698Z",
+          "type": "gauge",
+          "value": 85
+        },
+        {
+          "dt": "2025-07-11T17:36:27.698Z",
+          "type": "gauge",
+          "value": 84
+        }
+      ],
+      "type": "gauge",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "%"
+    }
+  ],
+  "2fc9388b-791a-4011-a752-2b94443f58ff": [
+    {
+      "name": "agent_workout_sessions_total",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.700Z",
+          "type": "counter",
+          "value": 1
+        },
+        {
+          "dt": "2025-07-11T16:59:27.700Z",
+          "type": "counter",
+          "value": 2
+        },
+        {
+          "dt": "2025-07-11T17:00:27.700Z",
+          "type": "counter",
+          "value": 3
+        },
+        {
+          "dt": "2025-07-11T17:01:27.700Z",
+          "type": "counter",
+          "value": 4
+        },
+        {
+          "dt": "2025-07-11T17:02:27.700Z",
+          "type": "counter",
+          "value": 5
+        },
+        {
+          "dt": "2025-07-11T17:03:27.700Z",
+          "type": "counter",
+          "value": 6
+        },
+        {
+          "dt": "2025-07-11T17:04:27.700Z",
+          "type": "counter",
+          "value": 7
+        },
+        {
+          "dt": "2025-07-11T17:05:27.700Z",
+          "type": "counter",
+          "value": 8
+        },
+        {
+          "dt": "2025-07-11T17:06:27.700Z",
+          "type": "counter",
+          "value": 9
+        },
+        {
+          "dt": "2025-07-11T17:07:27.700Z",
+          "type": "counter",
+          "value": 10
+        },
+        {
+          "dt": "2025-07-11T17:08:27.700Z",
+          "type": "counter",
+          "value": 11
+        },
+        {
+          "dt": "2025-07-11T17:09:27.700Z",
+          "type": "counter",
+          "value": 12
+        },
+        {
+          "dt": "2025-07-11T17:10:27.700Z",
+          "type": "counter",
+          "value": 13
+        },
+        {
+          "dt": "2025-07-11T17:11:27.700Z",
+          "type": "counter",
+          "value": 14
+        },
+        {
+          "dt": "2025-07-11T17:12:27.700Z",
+          "type": "counter",
+          "value": 15
+        },
+        {
+          "dt": "2025-07-11T17:13:27.700Z",
+          "type": "counter",
+          "value": 16
+        },
+        {
+          "dt": "2025-07-11T17:14:27.700Z",
+          "type": "counter",
+          "value": 17
+        },
+        {
+          "dt": "2025-07-11T17:15:27.700Z",
+          "type": "counter",
+          "value": 18
+        },
+        {
+          "dt": "2025-07-11T17:16:27.700Z",
+          "type": "counter",
+          "value": 19
+        },
+        {
+          "dt": "2025-07-11T17:17:27.700Z",
+          "type": "counter",
+          "value": 20
+        }
+      ],
+      "type": "counter",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "sessions"
+    },
+    {
+      "name": "agent_workout_compliance_gauge",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.700Z",
+          "type": "gauge",
+          "value": 80
+        },
+        {
+          "dt": "2025-07-11T16:59:27.700Z",
+          "type": "gauge",
+          "value": 81
+        },
+        {
+          "dt": "2025-07-11T17:00:27.700Z",
+          "type": "gauge",
+          "value": 82
+        },
+        {
+          "dt": "2025-07-11T17:01:27.700Z",
+          "type": "gauge",
+          "value": 83
+        },
+        {
+          "dt": "2025-07-11T17:02:27.700Z",
+          "type": "gauge",
+          "value": 82
+        },
+        {
+          "dt": "2025-07-11T17:03:27.700Z",
+          "type": "gauge",
+          "value": 83
+        },
+        {
+          "dt": "2025-07-11T17:04:27.700Z",
+          "type": "gauge",
+          "value": 84
+        },
+        {
+          "dt": "2025-07-11T17:05:27.700Z",
+          "type": "gauge",
+          "value": 83
+        },
+        {
+          "dt": "2025-07-11T17:06:27.700Z",
+          "type": "gauge",
+          "value": 84
+        },
+        {
+          "dt": "2025-07-11T17:07:27.700Z",
+          "type": "gauge",
+          "value": 85
+        },
+        {
+          "dt": "2025-07-11T17:08:27.700Z",
+          "type": "gauge",
+          "value": 84
+        },
+        {
+          "dt": "2025-07-11T17:09:27.700Z",
+          "type": "gauge",
+          "value": 85
+        },
+        {
+          "dt": "2025-07-11T17:10:27.700Z",
+          "type": "gauge",
+          "value": 86
+        },
+        {
+          "dt": "2025-07-11T17:11:27.700Z",
+          "type": "gauge",
+          "value": 85
+        },
+        {
+          "dt": "2025-07-11T17:12:27.700Z",
+          "type": "gauge",
+          "value": 86
+        },
+        {
+          "dt": "2025-07-11T17:13:27.700Z",
+          "type": "gauge",
+          "value": 87
+        },
+        {
+          "dt": "2025-07-11T17:14:27.700Z",
+          "type": "gauge",
+          "value": 86
+        },
+        {
+          "dt": "2025-07-11T17:15:27.700Z",
+          "type": "gauge",
+          "value": 87
+        },
+        {
+          "dt": "2025-07-11T17:16:27.700Z",
+          "type": "gauge",
+          "value": 88
+        },
+        {
+          "dt": "2025-07-11T17:17:27.700Z",
+          "type": "gauge",
+          "value": 87
+        }
+      ],
+      "type": "gauge",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "percentage"
+    },
+    {
+      "name": "social_support_interaction_total",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.700Z",
+          "type": "counter",
+          "value": 1
+        },
+        {
+          "dt": "2025-07-11T16:59:27.700Z",
+          "type": "counter",
+          "value": 2
+        },
+        {
+          "dt": "2025-07-11T17:00:27.700Z",
+          "type": "counter",
+          "value": 3
+        },
+        {
+          "dt": "2025-07-11T17:01:27.700Z",
+          "type": "counter",
+          "value": 4
+        },
+        {
+          "dt": "2025-07-11T17:02:27.700Z",
+          "type": "counter",
+          "value": 5
+        },
+        {
+          "dt": "2025-07-11T17:03:27.700Z",
+          "type": "counter",
+          "value": 6
+        },
+        {
+          "dt": "2025-07-11T17:04:27.700Z",
+          "type": "counter",
+          "value": 7
+        },
+        {
+          "dt": "2025-07-11T17:05:27.700Z",
+          "type": "counter",
+          "value": 8
+        },
+        {
+          "dt": "2025-07-11T17:06:27.700Z",
+          "type": "counter",
+          "value": 9
+        },
+        {
+          "dt": "2025-07-11T17:07:27.700Z",
+          "type": "counter",
+          "value": 10
+        },
+        {
+          "dt": "2025-07-11T17:08:27.700Z",
+          "type": "counter",
+          "value": 11
+        },
+        {
+          "dt": "2025-07-11T17:09:27.700Z",
+          "type": "counter",
+          "value": 12
+        },
+        {
+          "dt": "2025-07-11T17:10:27.700Z",
+          "type": "counter",
+          "value": 13
+        },
+        {
+          "dt": "2025-07-11T17:11:27.700Z",
+          "type": "counter",
+          "value": 14
+        },
+        {
+          "dt": "2025-07-11T17:12:27.700Z",
+          "type": "counter",
+          "value": 15
+        },
+        {
+          "dt": "2025-07-11T17:13:27.700Z",
+          "type": "counter",
+          "value": 16
+        },
+        {
+          "dt": "2025-07-11T17:14:27.700Z",
+          "type": "counter",
+          "value": 17
+        },
+        {
+          "dt": "2025-07-11T17:15:27.700Z",
+          "type": "counter",
+          "value": 18
+        },
+        {
+          "dt": "2025-07-11T17:16:27.700Z",
+          "type": "counter",
+          "value": 19
+        },
+        {
+          "dt": "2025-07-11T17:17:27.700Z",
+          "type": "counter",
+          "value": 20
+        }
+      ],
+      "type": "counter",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        },
+        {
+          "key": "partner_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "interactions"
+    },
+    {
+      "name": "average_response_time_seconds",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.700Z",
+          "type": "summary",
+          "count": 1,
+          "sum": 30,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T16:59:27.700Z",
+          "type": "summary",
+          "count": 2,
+          "sum": 60,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:00:27.700Z",
+          "type": "summary",
+          "count": 3,
+          "sum": 90,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:01:27.700Z",
+          "type": "summary",
+          "count": 4,
+          "sum": 120,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:02:27.700Z",
+          "type": "summary",
+          "count": 5,
+          "sum": 150,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:03:27.700Z",
+          "type": "summary",
+          "count": 6,
+          "sum": 180,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:04:27.700Z",
+          "type": "summary",
+          "count": 7,
+          "sum": 210,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:05:27.700Z",
+          "type": "summary",
+          "count": 8,
+          "sum": 240,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:06:27.700Z",
+          "type": "summary",
+          "count": 9,
+          "sum": 270,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:07:27.700Z",
+          "type": "summary",
+          "count": 10,
+          "sum": 300,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:08:27.700Z",
+          "type": "summary",
+          "count": 11,
+          "sum": 330,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:09:27.700Z",
+          "type": "summary",
+          "count": 12,
+          "sum": 360,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:10:27.700Z",
+          "type": "summary",
+          "count": 13,
+          "sum": 390,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:11:27.700Z",
+          "type": "summary",
+          "count": 14,
+          "sum": 420,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:12:27.700Z",
+          "type": "summary",
+          "count": 15,
+          "sum": 450,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:13:27.700Z",
+          "type": "summary",
+          "count": 16,
+          "sum": 480,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:14:27.700Z",
+          "type": "summary",
+          "count": 17,
+          "sum": 510,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:15:27.700Z",
+          "type": "summary",
+          "count": 18,
+          "sum": 540,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:16:27.700Z",
+          "type": "summary",
+          "count": 19,
+          "sum": 570,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:17:27.700Z",
+          "type": "summary",
+          "count": 20,
+          "sum": 600,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 30
+            },
+            {
+              "quantile": 0.9,
+              "value": 30
+            },
+            {
+              "quantile": 0.99,
+              "value": 30
+            }
+          ]
+        }
+      ],
+      "type": "summary",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "seconds"
+    },
+    {
+      "name": "workout_session_duration_seconds",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.700Z",
+          "type": "histogram",
+          "count": 1,
+          "sum": 180,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 1
+            },
+            {
+              "le": 240,
+              "count": 1
+            },
+            {
+              "le": 300,
+              "count": 1
+            },
+            {
+              "le": 360,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T16:59:27.700Z",
+          "type": "histogram",
+          "count": 2,
+          "sum": 390,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 2
+            },
+            {
+              "le": 300,
+              "count": 2
+            },
+            {
+              "le": 360,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:00:27.700Z",
+          "type": "histogram",
+          "count": 3,
+          "sum": 600,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 3
+            },
+            {
+              "le": 360,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:01:27.700Z",
+          "type": "histogram",
+          "count": 4,
+          "sum": 810,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 4
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:02:27.700Z",
+          "type": "histogram",
+          "count": 5,
+          "sum": 1020,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 5
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:03:27.700Z",
+          "type": "histogram",
+          "count": 6,
+          "sum": 1230,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 6
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:04:27.700Z",
+          "type": "histogram",
+          "count": 7,
+          "sum": 1440,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 7
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:05:27.700Z",
+          "type": "histogram",
+          "count": 8,
+          "sum": 1650,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 8
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:06:27.700Z",
+          "type": "histogram",
+          "count": 9,
+          "sum": 1860,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 9
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:07:27.700Z",
+          "type": "histogram",
+          "count": 10,
+          "sum": 2070,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 10
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:08:27.700Z",
+          "type": "histogram",
+          "count": 11,
+          "sum": 2280,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 11
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:09:27.700Z",
+          "type": "histogram",
+          "count": 12,
+          "sum": 2490,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 12
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:10:27.700Z",
+          "type": "histogram",
+          "count": 13,
+          "sum": 2700,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 13
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:11:27.700Z",
+          "type": "histogram",
+          "count": 14,
+          "sum": 2910,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 14
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:12:27.700Z",
+          "type": "histogram",
+          "count": 15,
+          "sum": 3120,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 15
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:13:27.700Z",
+          "type": "histogram",
+          "count": 16,
+          "sum": 3330,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 16
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:14:27.700Z",
+          "type": "histogram",
+          "count": 17,
+          "sum": 3540,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 17
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:15:27.700Z",
+          "type": "histogram",
+          "count": 18,
+          "sum": 3750,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:16:27.700Z",
+          "type": "histogram",
+          "count": 19,
+          "sum": 3960,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 19
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:17:27.700Z",
+          "type": "histogram",
+          "count": 20,
+          "sum": 4170,
+          "buckets": [
+            {
+              "le": 60,
+              "count": 0
+            },
+            {
+              "le": 120,
+              "count": 1
+            },
+            {
+              "le": 180,
+              "count": 2
+            },
+            {
+              "le": 240,
+              "count": 3
+            },
+            {
+              "le": 300,
+              "count": 4
+            },
+            {
+              "le": 360,
+              "count": 20
+            }
+          ]
+        }
+      ],
+      "type": "histogram",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "seconds"
+    },
+    {
+      "name": "motivation_level_score",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.700Z",
+          "type": "gauge",
+          "value": 70
+        },
+        {
+          "dt": "2025-07-11T16:59:27.700Z",
+          "type": "gauge",
+          "value": 72
+        },
+        {
+          "dt": "2025-07-11T17:00:27.700Z",
+          "type": "gauge",
+          "value": 73
+        },
+        {
+          "dt": "2025-07-11T17:01:27.700Z",
+          "type": "gauge",
+          "value": 74
+        },
+        {
+          "dt": "2025-07-11T17:02:27.700Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T17:03:27.700Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:04:27.700Z",
+          "type": "gauge",
+          "value": 77
+        },
+        {
+          "dt": "2025-07-11T17:05:27.700Z",
+          "type": "gauge",
+          "value": 78
+        },
+        {
+          "dt": "2025-07-11T17:06:27.700Z",
+          "type": "gauge",
+          "value": 79
+        },
+        {
+          "dt": "2025-07-11T17:07:27.700Z",
+          "type": "gauge",
+          "value": 80
+        },
+        {
+          "dt": "2025-07-11T17:08:27.700Z",
+          "type": "gauge",
+          "value": 81
+        },
+        {
+          "dt": "2025-07-11T17:09:27.700Z",
+          "type": "gauge",
+          "value": 82
+        },
+        {
+          "dt": "2025-07-11T17:10:27.700Z",
+          "type": "gauge",
+          "value": 83
+        },
+        {
+          "dt": "2025-07-11T17:11:27.700Z",
+          "type": "gauge",
+          "value": 84
+        },
+        {
+          "dt": "2025-07-11T17:12:27.700Z",
+          "type": "gauge",
+          "value": 85
+        },
+        {
+          "dt": "2025-07-11T17:13:27.700Z",
+          "type": "gauge",
+          "value": 86
+        },
+        {
+          "dt": "2025-07-11T17:14:27.700Z",
+          "type": "gauge",
+          "value": 87
+        },
+        {
+          "dt": "2025-07-11T17:15:27.700Z",
+          "type": "gauge",
+          "value": 88
+        },
+        {
+          "dt": "2025-07-11T17:16:27.700Z",
+          "type": "gauge",
+          "value": 89
+        },
+        {
+          "dt": "2025-07-11T17:17:27.700Z",
+          "type": "gauge",
+          "value": 90
+        }
+      ],
+      "type": "gauge",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "score"
+    }
+  ],
+  "d6e96a58-6cee-4bed-84b3-7a5308fe51a8": [
+    {
+      "name": "agent_workout_sessions_total",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.693Z",
+          "type": "counter",
+          "value": 1
+        },
+        {
+          "dt": "2025-07-11T16:59:27.693Z",
+          "type": "counter",
+          "value": 2
+        },
+        {
+          "dt": "2025-07-11T17:00:27.693Z",
+          "type": "counter",
+          "value": 3
+        },
+        {
+          "dt": "2025-07-11T17:01:27.693Z",
+          "type": "counter",
+          "value": 4
+        },
+        {
+          "dt": "2025-07-11T17:02:27.693Z",
+          "type": "counter",
+          "value": 5
+        },
+        {
+          "dt": "2025-07-11T17:03:27.693Z",
+          "type": "counter",
+          "value": 6
+        },
+        {
+          "dt": "2025-07-11T17:04:27.693Z",
+          "type": "counter",
+          "value": 7
+        },
+        {
+          "dt": "2025-07-11T17:05:27.693Z",
+          "type": "counter",
+          "value": 8
+        },
+        {
+          "dt": "2025-07-11T17:06:27.693Z",
+          "type": "counter",
+          "value": 9
+        },
+        {
+          "dt": "2025-07-11T17:07:27.693Z",
+          "type": "counter",
+          "value": 10
+        },
+        {
+          "dt": "2025-07-11T17:08:27.693Z",
+          "type": "counter",
+          "value": 11
+        },
+        {
+          "dt": "2025-07-11T17:09:27.693Z",
+          "type": "counter",
+          "value": 12
+        },
+        {
+          "dt": "2025-07-11T17:10:27.693Z",
+          "type": "counter",
+          "value": 13
+        },
+        {
+          "dt": "2025-07-11T17:11:27.693Z",
+          "type": "counter",
+          "value": 14
+        },
+        {
+          "dt": "2025-07-11T17:12:27.693Z",
+          "type": "counter",
+          "value": 15
+        },
+        {
+          "dt": "2025-07-11T17:13:27.693Z",
+          "type": "counter",
+          "value": 16
+        },
+        {
+          "dt": "2025-07-11T17:14:27.693Z",
+          "type": "counter",
+          "value": 17
+        },
+        {
+          "dt": "2025-07-11T17:15:27.693Z",
+          "type": "counter",
+          "value": 18
+        },
+        {
+          "dt": "2025-07-11T17:16:27.693Z",
+          "type": "counter",
+          "value": 19
+        },
+        {
+          "dt": "2025-07-11T17:17:27.693Z",
+          "type": "counter",
+          "value": 20
+        }
+      ],
+      "type": "counter",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "sessions"
+    },
+    {
+      "name": "agent_workout_compliance_gauge",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.693Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T16:59:27.693Z",
+          "type": "gauge",
+          "value": 77
+        },
+        {
+          "dt": "2025-07-11T17:00:27.693Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:01:27.693Z",
+          "type": "gauge",
+          "value": 78
+        },
+        {
+          "dt": "2025-07-11T17:02:27.693Z",
+          "type": "gauge",
+          "value": 77
+        },
+        {
+          "dt": "2025-07-11T17:03:27.693Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:04:27.693Z",
+          "type": "gauge",
+          "value": 77
+        },
+        {
+          "dt": "2025-07-11T17:05:27.693Z",
+          "type": "gauge",
+          "value": 78
+        },
+        {
+          "dt": "2025-07-11T17:06:27.693Z",
+          "type": "gauge",
+          "value": 77
+        },
+        {
+          "dt": "2025-07-11T17:07:27.693Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:08:27.693Z",
+          "type": "gauge",
+          "value": 78
+        },
+        {
+          "dt": "2025-07-11T17:09:27.693Z",
+          "type": "gauge",
+          "value": 79
+        },
+        {
+          "dt": "2025-07-11T17:10:27.693Z",
+          "type": "gauge",
+          "value": 80
+        },
+        {
+          "dt": "2025-07-11T17:11:27.693Z",
+          "type": "gauge",
+          "value": 81
+        },
+        {
+          "dt": "2025-07-11T17:12:27.693Z",
+          "type": "gauge",
+          "value": 80
+        },
+        {
+          "dt": "2025-07-11T17:13:27.693Z",
+          "type": "gauge",
+          "value": 78
+        },
+        {
+          "dt": "2025-07-11T17:14:27.693Z",
+          "type": "gauge",
+          "value": 79
+        },
+        {
+          "dt": "2025-07-11T17:15:27.693Z",
+          "type": "gauge",
+          "value": 80
+        },
+        {
+          "dt": "2025-07-11T17:16:27.693Z",
+          "type": "gauge",
+          "value": 81
+        },
+        {
+          "dt": "2025-07-11T17:17:27.693Z",
+          "type": "gauge",
+          "value": 82
+        }
+      ],
+      "type": "gauge",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "percentage"
+    },
+    {
+      "name": "social_support_interaction_total",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.693Z",
+          "type": "counter",
+          "value": 1
+        },
+        {
+          "dt": "2025-07-11T16:59:27.693Z",
+          "type": "counter",
+          "value": 2
+        },
+        {
+          "dt": "2025-07-11T17:00:27.693Z",
+          "type": "counter",
+          "value": 3
+        },
+        {
+          "dt": "2025-07-11T17:01:27.693Z",
+          "type": "counter",
+          "value": 4
+        },
+        {
+          "dt": "2025-07-11T17:02:27.693Z",
+          "type": "counter",
+          "value": 5
+        },
+        {
+          "dt": "2025-07-11T17:03:27.693Z",
+          "type": "counter",
+          "value": 6
+        },
+        {
+          "dt": "2025-07-11T17:04:27.693Z",
+          "type": "counter",
+          "value": 7
+        },
+        {
+          "dt": "2025-07-11T17:05:27.693Z",
+          "type": "counter",
+          "value": 8
+        },
+        {
+          "dt": "2025-07-11T17:06:27.693Z",
+          "type": "counter",
+          "value": 9
+        },
+        {
+          "dt": "2025-07-11T17:07:27.693Z",
+          "type": "counter",
+          "value": 10
+        },
+        {
+          "dt": "2025-07-11T17:08:27.693Z",
+          "type": "counter",
+          "value": 11
+        },
+        {
+          "dt": "2025-07-11T17:09:27.693Z",
+          "type": "counter",
+          "value": 12
+        },
+        {
+          "dt": "2025-07-11T17:10:27.693Z",
+          "type": "counter",
+          "value": 13
+        },
+        {
+          "dt": "2025-07-11T17:11:27.693Z",
+          "type": "counter",
+          "value": 14
+        },
+        {
+          "dt": "2025-07-11T17:12:27.693Z",
+          "type": "counter",
+          "value": 15
+        },
+        {
+          "dt": "2025-07-11T17:13:27.693Z",
+          "type": "counter",
+          "value": 16
+        },
+        {
+          "dt": "2025-07-11T17:14:27.693Z",
+          "type": "counter",
+          "value": 17
+        },
+        {
+          "dt": "2025-07-11T17:15:27.693Z",
+          "type": "counter",
+          "value": 18
+        },
+        {
+          "dt": "2025-07-11T17:16:27.693Z",
+          "type": "counter",
+          "value": 19
+        },
+        {
+          "dt": "2025-07-11T17:17:27.693Z",
+          "type": "counter",
+          "value": 20
+        }
+      ],
+      "type": "counter",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        },
+        {
+          "key": "partner_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "interactions"
+    },
+    {
+      "name": "average_response_time_seconds",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.693Z",
+          "type": "summary",
+          "count": 1,
+          "sum": 12,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 12
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T16:59:27.693Z",
+          "type": "summary",
+          "count": 2,
+          "sum": 23,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:00:27.693Z",
+          "type": "summary",
+          "count": 3,
+          "sum": 35,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:01:27.693Z",
+          "type": "summary",
+          "count": 4,
+          "sum": 48,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 12
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:02:27.693Z",
+          "type": "summary",
+          "count": 5,
+          "sum": 55,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:03:27.693Z",
+          "type": "summary",
+          "count": 6,
+          "sum": 66,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:04:27.693Z",
+          "type": "summary",
+          "count": 7,
+          "sum": 77,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:05:27.693Z",
+          "type": "summary",
+          "count": 8,
+          "sum": 88,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:06:27.693Z",
+          "type": "summary",
+          "count": 9,
+          "sum": 99,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:07:27.693Z",
+          "type": "summary",
+          "count": 10,
+          "sum": 110,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:08:27.693Z",
+          "type": "summary",
+          "count": 11,
+          "sum": 121,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:09:27.693Z",
+          "type": "summary",
+          "count": 12,
+          "sum": 132,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:10:27.693Z",
+          "type": "summary",
+          "count": 13,
+          "sum": 143,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:11:27.693Z",
+          "type": "summary",
+          "count": 14,
+          "sum": 154,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:12:27.693Z",
+          "type": "summary",
+          "count": 15,
+          "sum": 165,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:13:27.693Z",
+          "type": "summary",
+          "count": 16,
+          "sum": 176,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:14:27.693Z",
+          "type": "summary",
+          "count": 17,
+          "sum": 187,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:15:27.693Z",
+          "type": "summary",
+          "count": 18,
+          "sum": 198,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:16:27.693Z",
+          "type": "summary",
+          "count": 19,
+          "sum": 209,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:17:27.693Z",
+          "type": "summary",
+          "count": 20,
+          "sum": 220,
+          "quantiles": [
+            {
+              "quantile": 0.5,
+              "value": 11.5
+            },
+            {
+              "quantile": 0.9,
+              "value": 15
+            },
+            {
+              "quantile": 0.99,
+              "value": 18
+            }
+          ]
+        }
+      ],
+      "type": "summary",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Alex"
+        }
+      ],
+      "unit": "seconds"
+    },
+    {
+      "name": "workout_session_duration_seconds",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.693Z",
+          "type": "histogram",
+          "count": 1,
+          "sum": 1800,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 0
+            },
+            {
+              "le": 1800,
+              "count": 1
+            },
+            {
+              "le": 2400,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T16:59:27.693Z",
+          "type": "histogram",
+          "count": 2,
+          "sum": 3600,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 1
+            },
+            {
+              "le": 1800,
+              "count": 2
+            },
+            {
+              "le": 2400,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:00:27.693Z",
+          "type": "histogram",
+          "count": 3,
+          "sum": 5400,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 3
+            },
+            {
+              "le": 2400,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:01:27.693Z",
+          "type": "histogram",
+          "count": 4,
+          "sum": 7200,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 4
+            },
+            {
+              "le": 2400,
+              "count": 4
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:02:27.693Z",
+          "type": "histogram",
+          "count": 5,
+          "sum": 9000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 5
+            },
+            {
+              "le": 2400,
+              "count": 5
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:03:27.693Z",
+          "type": "histogram",
+          "count": 6,
+          "sum": 10800,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 6
+            },
+            {
+              "le": 2400,
+              "count": 6
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:04:27.693Z",
+          "type": "histogram",
+          "count": 7,
+          "sum": 12600,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 7
+            },
+            {
+              "le": 2400,
+              "count": 7
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:05:27.693Z",
+          "type": "histogram",
+          "count": 8,
+          "sum": 14400,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 8
+            },
+            {
+              "le": 2400,
+              "count": 8
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:06:27.693Z",
+          "type": "histogram",
+          "count": 9,
+          "sum": 16200,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 9
+            },
+            {
+              "le": 2400,
+              "count": 9
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:07:27.693Z",
+          "type": "histogram",
+          "count": 10,
+          "sum": 18000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 10
+            },
+            {
+              "le": 2400,
+              "count": 10
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:08:27.693Z",
+          "type": "histogram",
+          "count": 11,
+          "sum": 19800,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 11
+            },
+            {
+              "le": 2400,
+              "count": 11
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:09:27.693Z",
+          "type": "histogram",
+          "count": 12,
+          "sum": 21600,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 12
+            },
+            {
+              "le": 2400,
+              "count": 12
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:10:27.693Z",
+          "type": "histogram",
+          "count": 13,
+          "sum": 23400,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 13
+            },
+            {
+              "le": 2400,
+              "count": 13
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:11:27.693Z",
+          "type": "histogram",
+          "count": 14,
+          "sum": 25200,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 14
+            },
+            {
+              "le": 2400,
+              "count": 14
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:12:27.693Z",
+          "type": "histogram",
+          "count": 15,
+          "sum": 27000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 15
+            },
+            {
+              "le": 2400,
+              "count": 15
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:13:27.693Z",
+          "type": "histogram",
+          "count": 16,
+          "sum": 28800,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 16
+            },
+            {
+              "le": 2400,
+              "count": 16
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:14:27.693Z",
+          "type": "histogram",
+          "count": 17,
+          "sum": 30600,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 17
+            },
+            {
+              "le": 2400,
+              "count": 17
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:15:27.693Z",
+          "type": "histogram",
+          "count": 18,
+          "sum": 32400,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 18
+            },
+            {
+              "le": 2400,
+              "count": 18
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:16:27.693Z",
+          "type": "histogram",
+          "count": 19,
+          "sum": 34200,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 19
+            },
+            {
+              "le": 2400,
+              "count": 19
+            }
+          ]
+        },
+        {
+          "dt": "2025-07-11T17:17:27.693Z",
+          "type": "histogram",
+          "count": 20,
+          "sum": 36000,
+          "buckets": [
+            {
+              "le": 600,
+              "count": 1
+            },
+            {
+              "le": 1200,
+              "count": 2
+            },
+            {
+              "le": 1800,
+              "count": 20
+            },
+            {
+              "le": 2400,
+              "count": 20
+            }
+          ]
+        }
+      ],
+      "type": "histogram",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "seconds"
+    },
+    {
+      "name": "motivation_level_score",
+      "data": [
+        {
+          "dt": "2025-07-11T16:58:27.693Z",
+          "type": "gauge",
+          "value": 65
+        },
+        {
+          "dt": "2025-07-11T16:59:27.693Z",
+          "type": "gauge",
+          "value": 66
+        },
+        {
+          "dt": "2025-07-11T17:00:27.693Z",
+          "type": "gauge",
+          "value": 67
+        },
+        {
+          "dt": "2025-07-11T17:01:27.693Z",
+          "type": "gauge",
+          "value": 66
+        },
+        {
+          "dt": "2025-07-11T17:02:27.693Z",
+          "type": "gauge",
+          "value": 68
+        },
+        {
+          "dt": "2025-07-11T17:03:27.693Z",
+          "type": "gauge",
+          "value": 69
+        },
+        {
+          "dt": "2025-07-11T17:04:27.693Z",
+          "type": "gauge",
+          "value": 70
+        },
+        {
+          "dt": "2025-07-11T17:05:27.693Z",
+          "type": "gauge",
+          "value": 71
+        },
+        {
+          "dt": "2025-07-11T17:06:27.693Z",
+          "type": "gauge",
+          "value": 70
+        },
+        {
+          "dt": "2025-07-11T17:07:27.693Z",
+          "type": "gauge",
+          "value": 69
+        },
+        {
+          "dt": "2025-07-11T17:08:27.693Z",
+          "type": "gauge",
+          "value": 72
+        },
+        {
+          "dt": "2025-07-11T17:09:27.693Z",
+          "type": "gauge",
+          "value": 73
+        },
+        {
+          "dt": "2025-07-11T17:10:27.693Z",
+          "type": "gauge",
+          "value": 74
+        },
+        {
+          "dt": "2025-07-11T17:11:27.693Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T17:12:27.693Z",
+          "type": "gauge",
+          "value": 74
+        },
+        {
+          "dt": "2025-07-11T17:13:27.693Z",
+          "type": "gauge",
+          "value": 73
+        },
+        {
+          "dt": "2025-07-11T17:14:27.693Z",
+          "type": "gauge",
+          "value": 75
+        },
+        {
+          "dt": "2025-07-11T17:15:27.693Z",
+          "type": "gauge",
+          "value": 76
+        },
+        {
+          "dt": "2025-07-11T17:16:27.693Z",
+          "type": "gauge",
+          "value": 77
+        },
+        {
+          "dt": "2025-07-11T17:17:27.693Z",
+          "type": "gauge",
+          "value": 78
+        }
+      ],
+      "type": "gauge",
+      "tags": [
+        {
+          "key": "agent_name",
+          "value": "Jordan"
+        }
+      ],
+      "unit": "score"
+    }
+  ]
+}

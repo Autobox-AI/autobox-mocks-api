@@ -1,0 +1,62 @@
+[
+  {
+    "id": "13e58bc7-f859-4977-b6ac-8a313c9f1be8",
+    "name": "Friends Dynamics",
+    "description": "Experiment to understand how friends influence each other on decision making",
+    "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
+    "created_at": "2024-01-01T00:00:00",
+    "updated_at": "2024-01-01T00:00:00",
+    "status": "active",
+    "confidence_level": "high"
+  },
+  {
+    "id": "e7557ef3-e3ed-4a4b-b960-a1777224c8f5",
+    "name": "Work Dynamics",
+    "description": "Experiment to understand how work environment influences productivity",
+    "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
+    "created_at": "2024-01-01T00:00:00",
+    "updated_at": "2024-01-01T00:00:00",
+    "status": "active",
+    "confidence_level": "high"
+  },
+  {
+    "id": "408700ec-d5e2-42d7-a3e7-035f12e43c9a",
+    "name": "Workplace Collaboration",
+    "description": "A simulation to analyze how teams collaborate and how leadership dynamics affect productivity and decision-making.",
+    "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
+    "created_at": "2024-01-01T00:00:00",
+    "updated_at": "2024-01-01T00:00:00",
+    "status": "active",
+    "confidence_level": "low"
+  },
+  {
+    "id": "12ab459a-d6c9-450c-beb4-d94cf0a14a06",
+    "name": "Climate Change Strategy",
+    "description": "A simulation where different regions must decide on environmental policies, balancing economic growth with sustainability efforts.",
+    "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
+    "created_at": "2024-01-01T00:00:00",
+    "updated_at": "2024-01-01T00:00:00",
+    "status": "active",
+    "confidence_level": "low"
+  },
+  {
+    "id": "fe5b6b11-80b6-4650-b684-bfaf6a24f10e",
+    "name": "Marketing Campaign Effectiveness",
+    "description": "Simulate the impact of various marketing strategies on consumer behavior, focusing on how social media influencers or advertisements affect purchase decisions.",
+    "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
+    "created_at": "2024-01-01T00:00:00",
+    "updated_at": "2024-01-01T00:00:00",
+    "status": "active",
+    "confidence_level": "high"
+  },
+  {
+    "id": "454bd1d2-8e76-42bd-b59e-a7a481836ae3",
+    "name": "Space Colonization Planning",
+    "description": "A multi-agent simulation for planning Mars colonization, including resource allocation, habitat design, and mission scheduling.",
+    "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
+    "created_at": "2024-01-01T00:00:00",
+    "updated_at": "2024-01-01T00:00:00",
+    "status": "active",
+    "confidence_level": "medium"
+  }
+]

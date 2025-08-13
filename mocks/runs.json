@@ -1,0 +1,731 @@
+[
+  {
+    "run": {
+      "id": "5388ffbb-af96-46e5-ae9b-82a2366a8fa8",
+      "simulation_id": "00cd9915-bdbc-460a-b16a-09f4cff17c2f",
+      "status": "aborted",
+      "progress": 80,
+      "started_at": "2024-07-20T08:21:00Z",
+      "summary": null,
+      "orchestrator": {
+        "id": "03fe0bef-6214-43d2-bc48-e14be4fc39e6",
+        "name": "orchestrator",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "evaluator": {
+        "id": "6c6b9824-19ab-492f-9816-51ad88f72c3f",
+        "name": "evaluator",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "planner": {
+        "id": "b3f4c38e-3a6e-4686-bacb-f576a07ee112",
+        "name": "planner",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "reporter": {
+        "id": "413294f1-bd2e-4510-a552-826506e326d2",
+        "name": "reporter",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "workers": [
+        {
+          "id": "991dc198-0df8-4b37-9163-485c96d809b0",
+          "name": "Sarah",
+          "role": "social organizer",
+          "description": "Enthusiastic friend who loves planning group activities",
+          "backstory": "A 28-year-old marketing professional who thrives on bringing friends together. Known for her creativity and ability to find activities that everyone enjoys.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        },
+        {
+          "id": "765efbde-6a22-4e6c-8c12-cd7596fe2865",
+          "name": "Mike",
+          "role": "practical planner",
+          "description": "Logical friend who focuses on logistics and feasibility",
+          "backstory": "A 30-year-old engineer who approaches weekend planning with systematic thinking. He's the friend who checks weather forecasts and considers travel times.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        },
+        {
+          "id": "be04be7d-6096-42c8-a628-9d63fe376af4",
+          "name": "Emma",
+          "role": "budget conscious friend",
+          "description": "Cost-aware friend who suggests affordable alternatives",
+          "backstory": "A 26-year-old teacher who loves spending time with friends but is mindful of expenses.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        }
+      ],
+      "aborted_at": "2024-07-20T08:36:00Z"
+    },
+    "traces": [
+      {
+        "from": "orchestrator",
+        "to": "planner",
+        "content": "Initiating planning phase for the weekend trip. We're focusing on combining a London Harry Potter studio visit with a Swiss Alps retreat, ensuring integration of everyone's preferences and logistics considerations.",
+        "is_system_trace": true,
+        "created_at": "2024-07-20T08:21:02Z"
+      },
+      {
+        "from": "planner",
+        "to": "orchestrator",
+        "content": "Drafting preliminary itinerary that includes a London stopover for Harry Potter experiences, a scenic stay in the Swiss Alps, and early booking of Premier League tickets to secure availability.",
+        "is_system_trace": true,
+        "created_at": "2024-07-20T08:21:09Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "Sarah",
+        "content": "Sarah, please review the proposed itinerary: a Harry Potter studio tour in London followed by an Alpine retreat to relax and hike. Are there any specific activities or preferences you want us to consider?",
+        "is_system_trace": false,
+        "created_at": "2024-07-20T08:21:15Z"
+      },
+      {
+        "from": "Sarah",
+        "to": "orchestrator",
+        "content": "The plan sounds fantastic! I'd love to ensure we have some creative group activities in London and cozy cabin stays in the Alps. Also, let's look into fun icebreaker activities for the trip.",
+        "is_system_trace": false,
+        "created_at": "2024-07-20T08:21:23Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "Emma",
+        "content": "Emma, the itinerary includes a London Harry Potter tour and Swiss Alps retreat. Please review the budget considerations and suggest any affordable alternatives or adjustments to optimize expenses.",
+        "is_system_trace": false,
+        "created_at": "2024-07-20T08:21:30Z"
+      },
+      {
+        "from": "Emma",
+        "to": "orchestrator",
+        "content": "The plan is exciting! To stay within budget, we could consider mid-range accommodations, pre-book group discounts, and alternative dining options in London. The Alps can also have cost-effective lodging options.",
+        "is_system_trace": false,
+        "created_at": "2024-07-20T08:21:38Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "evaluator",
+        "content": "Proceed with detailed budget assessment and logistical feasibility for the plan incorporating London and Swiss Alps activities, ensuring all preferences are balanced.",
+        "is_system_trace": true,
+        "created_at": "2024-07-20T08:21:45Z"
+      },
+      {
+        "from": "evaluator",
+        "to": "orchestrator",
+        "content": "Assessment complete. The proposed plan is feasible with slight budget adjustments. Recommendations for early bookings and cost-saving measures have been noted.",
+        "is_system_trace": true,
+        "created_at": "2024-07-20T08:21:52Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "reporter",
+        "content": "Final summary: The group plans a combined London and Swiss Alps trip, with Harry Potter studio tour, Alps hiking, and early Premier League ticket bookings. Budget suggestions incorporated.",
+        "is_system_trace": true,
+        "created_at": "2024-07-20T08:22:00Z"
+      }
+    ]
+  },
+  {
+    "run": {
+      "id": "d6e96a58-6cee-4bed-84b3-7a5308fe51a8",
+      "simulation_id": "7ed08ba7-52cc-4d27-a3b9-ddf3e3951b7a",
+      "status": "in progress",
+      "progress": 69,
+      "started_at": "2024-08-01T16:48:00Z",
+      "summary": null,
+      "orchestrator": {
+        "id": "f5e257e6-f87c-482f-ad53-a0532a15c846",
+        "name": "orchestrator",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "evaluator": {
+        "id": "e5d281eb-d79e-4507-bd04-8b2da7bd0974",
+        "name": "evaluator",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "planner": {
+        "id": "d31e3984-6ab3-4092-8366-6a8a0b23235d",
+        "name": "planner",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "reporter": {
+        "id": "48ebbfe4-37b8-4708-84ef-a45e92676b0c",
+        "name": "reporter",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "workers": [
+        {
+          "id": "c6817366-eb91-46c4-b2e2-d9ef6cce7730",
+          "name": "Alex",
+          "role": "motivated gym buddy",
+          "description": "Highly motivated fitness enthusiast who encourages their workout partner",
+          "backstory": "A 29-year-old software developer who discovered fitness three years ago and never looked back.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        },
+        {
+          "id": "03ab610a-c795-4cae-b1af-a33c50508641",
+          "name": "Jordan",
+          "role": "reluctant exerciser",
+          "description": "Friend who struggles with workout consistency and needs motivation",
+          "backstory": "A 27-year-old who knows exercise is important but finds it hard to stay motivated.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        }
+      ],
+      "updated_at": "2024-08-01T17:44:00Z"
+    },
+    "traces": [
+      {
+        "from": "orchestrator",
+        "to": "planner",
+        "content": "Initiating planning phase for the Gym Buddy Motivation simulation. Assigning task to craft a dynamic interaction sequence between Alex and Jordan, focusing on how social support influences workout consistency.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:48:03Z"
+      },
+      {
+        "from": "planner",
+        "to": "orchestrator",
+        "content": "Planning process started with the goal to depict progressive motivation levels and interaction cues, aiming for realistic social influence portrayal.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:48:11Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "Alex",
+        "content": "Please prepare a motivational message addressing Jordan’s reluctance, including encouragement and shared goals.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:48:17Z"
+      },
+      {
+        "from": "Alex",
+        "to": "orchestrator",
+        "content": "Hey Jordan! Remember how good you felt after our last workout? Let's keep that momentum going — every session counts! You've got this!",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:48:22Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "Jordan",
+        "content": "Requesting input on how Alex's motivational message impacts your engagement level in the simulation.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:48:29Z"
+      },
+      {
+        "from": "Jordan",
+        "to": "orchestrator",
+        "content": "Alex's message is encouraging; it makes me more willing to try again. I appreciate the support, but I still struggle to stay consistent.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:48:36Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "evaluator",
+        "content": "Evaluate the influence of Alex's motivational message on Jordan's workout commitment, and provide metrics on social support impacts.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:48:42Z"
+      },
+      {
+        "from": "evaluator",
+        "to": "orchestrator",
+        "content": "The motivational message increased Jordan's workout willingness by 35%, showing a positive effect of targeted social support.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:48:52Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "reporter",
+        "content": "Summarize the simulation indicating that motivational social support notably enhances workout commitment among reluctant exercisers.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:48:58Z"
+      },
+      {
+        "from": "reporter",
+        "to": "orchestrator",
+        "content": "The Gym Buddy Motivation simulation demonstrates that targeted encouragement significantly boosts exercise adherence, especially in reluctant participants.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:49:05Z"
+      }
+    ]
+  },
+  {
+    "run": {
+      "id": "696f480a-f2e9-46f0-834b-006599a55f38",
+      "simulation_id": "7ed08ba7-52cc-4d27-a3b9-ddf3e3951b7a",
+      "status": "failed",
+      "progress": 50,
+      "started_at": "2024-08-01T16:58:00Z",
+      "summary": null,
+      "orchestrator": {
+        "id": "f5e257e6-f87c-482f-ad53-a0532a15c846",
+        "name": "orchestrator",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "evaluator": {
+        "id": "e5d281eb-d79e-4507-bd04-8b2da7bd0974",
+        "name": "evaluator",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "planner": {
+        "id": "d31e3984-6ab3-4092-8366-6a8a0b23235d",
+        "name": "planner",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "reporter": {
+        "id": "48ebbfe4-37b8-4708-84ef-a45e92676b0c",
+        "name": "reporter",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "workers": [
+        {
+          "id": "c6817366-eb91-46c4-b2e2-d9ef6cce7730",
+          "name": "Alex",
+          "role": "motivated gym buddy",
+          "description": "Highly motivated fitness enthusiast who encourages their workout partner",
+          "backstory": "A 29-year-old software developer who discovered fitness three years ago and never looked back.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        },
+        {
+          "id": "03ab610a-c795-4cae-b1af-a33c50508641",
+          "name": "Jordan",
+          "role": "reluctant exerciser",
+          "description": "Friend who struggles with workout consistency and needs motivation",
+          "backstory": "A 27-year-old who knows exercise is important but finds it hard to stay motivated.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        }
+      ],
+      "finished_at": "2024-08-01T17:58:00Z"
+    },
+    "traces": [
+      {
+        "from": "orchestrator",
+        "to": "planner",
+        "content": "Initiating planning phase for the Gym Buddy Motivation simulation. Assigning roles and setting initial tasks for Alex and Jordan, focusing on social support impact on workout consistency.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:58:02Z"
+      },
+      {
+        "from": "planner",
+        "to": "orchestrator",
+        "content": "Planning sequence prepared: Coordinate motivational exchanges, schedule a series of interactions to monitor influence on workout motivation, and set evaluation metrics.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:58:09Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "Alex",
+        "content": "Begin by encouraging Jordan to share his current workout challenges. Focus on affirming motivation and providing specific support tactics.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:58:11Z"
+      },
+      {
+        "from": "Alex",
+        "to": "orchestrator",
+        "content": "I’ve told Jordan to describe what's holding him back and shared some tips to boost his motivation, emphasizing consistency and small goals.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:58:19Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "Jordan",
+        "content": "Ask Jordan to openly discuss his hesitations and needs. Encourage him to reflect on the benefits of maintaining regular workouts.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:58:22Z"
+      },
+      {
+        "from": "Jordan",
+        "to": "orchestrator",
+        "content": "Expressed difficulty staying motivated. Mentioned that motivational support from Alex helps, but internal struggles persist.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:58:28Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "Alex",
+        "content": "Request Alex to provide tailored encouragement based on Jordan’s feedback, aiming to reinforce his commitment and suggest attainable goals.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:58:30Z"
+      },
+      {
+        "from": "Alex",
+        "to": "orchestrator",
+        "content": "Offered personalized advice to Jordan, emphasizing small, achievable milestones and highlighting the importance of social support for consistency.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:58:36Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "evaluator",
+        "content": "Evaluate the influence of Alex’s motivational strategies on Jordan’s expressed commitment level and perceived support.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:58:41Z"
+      },
+      {
+        "from": "evaluator",
+        "to": "orchestrator",
+        "content": "Analysis complete: Motivational encouragement correlates with increased self-reported motivation. Further data collection recommended.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:58:48Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "reporter",
+        "content": "Summary: The simulation indicates social support from a motivated gym buddy significantly enhances workout motivation, despite residual internal struggles.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:58:52Z"
+      }
+    ]
+  },
+  {
+    "run": {
+      "id": "2fc9388b-791a-4011-a752-2b94443f58ff",
+      "simulation_id": "7ed08ba7-52cc-4d27-a3b9-ddf3e3951b7a",
+      "status": "failed",
+      "progress": 87,
+      "started_at": "2024-08-01T16:54:00Z",
+      "summary": null,
+      "orchestrator": {
+        "id": "f5e257e6-f87c-482f-ad53-a0532a15c846",
+        "name": "orchestrator",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "evaluator": {
+        "id": "e5d281eb-d79e-4507-bd04-8b2da7bd0974",
+        "name": "evaluator",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "planner": {
+        "id": "d31e3984-6ab3-4092-8366-6a8a0b23235d",
+        "name": "planner",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "reporter": {
+        "id": "48ebbfe4-37b8-4708-84ef-a45e92676b0c",
+        "name": "reporter",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "workers": [
+        {
+          "id": "c6817366-eb91-46c4-b2e2-d9ef6cce7730",
+          "name": "Alex",
+          "role": "motivated gym buddy",
+          "description": "Highly motivated fitness enthusiast who encourages their workout partner",
+          "backstory": "A 29-year-old software developer who discovered fitness three years ago and never looked back.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        },
+        {
+          "id": "03ab610a-c795-4cae-b1af-a33c50508641",
+          "name": "Jordan",
+          "role": "reluctant exerciser",
+          "description": "Friend who struggles with workout consistency and needs motivation",
+          "backstory": "A 27-year-old who knows exercise is important but finds it hard to stay motivated.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        }
+      ],
+      "finished_at": "2024-08-01T17:54:00Z"
+    },
+    "traces": [
+      {
+        "from": "orchestrator",
+        "to": "planner",
+        "content": "Initializing the task analysis: coordinating agents to evaluate social support impact on workout consistency, starting with strategic planning of interaction flow.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:54:02Z"
+      },
+      {
+        "from": "planner",
+        "to": "orchestrator",
+        "content": "Planning phase started: defining steps for agents to assess motivational dynamics between Alex and Jordan, with focus on encouraging persistence.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:54:09Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "Alex",
+        "content": "Reach out to Alex to emphasize their motivated nature and encourage sharing strategies they use to motivate Jordan.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:54:13Z"
+      },
+      {
+        "from": "Alex",
+        "to": "orchestrator",
+        "content": "Alex prepares to share enthusiasm and practical tips to boost Jordan's motivation, aiming to observe how peer encouragement influences consistency.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:54:21Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "Jordan",
+        "content": "Prompt Jordan to express his current challenges and openness to motivational strategies suggested by Alex.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:54:27Z"
+      },
+      {
+        "from": "Jordan",
+        "to": "orchestrator",
+        "content": "Jordan outlines his struggles with consistency and welcomes encouragement, indicating a receptive attitude towards social support.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:54:36Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "evaluator",
+        "content": "Request evaluation of current motivational impact based on agent interactions and observable changes in Jordan's engagement.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:54:45Z"
+      },
+      {
+        "from": "evaluator",
+        "to": "orchestrator",
+        "content": "Evaluation conducted: preliminary evidence suggests slight improvement in Jordan's motivation following Alex's encouragement.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:54:52Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "reporter",
+        "content": "Compile a report summarizing how social support from motivated peers like Alex influences workout motivation and consistency.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:55:00Z"
+      },
+      {
+        "from": "reporter",
+        "to": "orchestrator",
+        "content": "Final report generated: social support from enthusiastic peers appears to positively impact workout persistence, especially when encouragement addresses personal challenges.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:55:07Z"
+      }
+    ]
+  },
+  {
+    "run": {
+      "id": "ddfb2356-9c32-4738-af88-f996e45254f9",
+      "simulation_id": "7ed08ba7-52cc-4d27-a3b9-ddf3e3951b7a",
+      "status": "created",
+      "progress": 0,
+      "started_at": "2024-08-01T16:27:00Z",
+      "summary": null,
+      "orchestrator": {
+        "id": "f5e257e6-f87c-482f-ad53-a0532a15c846",
+        "name": "orchestrator",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "evaluator": {
+        "id": "e5d281eb-d79e-4507-bd04-8b2da7bd0974",
+        "name": "evaluator",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "planner": {
+        "id": "d31e3984-6ab3-4092-8366-6a8a0b23235d",
+        "name": "planner",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "reporter": {
+        "id": "48ebbfe4-37b8-4708-84ef-a45e92676b0c",
+        "name": "reporter",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "workers": [
+        {
+          "id": "c6817366-eb91-46c4-b2e2-d9ef6cce7730",
+          "name": "Alex",
+          "role": "motivated gym buddy",
+          "description": "Highly motivated fitness enthusiast who encourages their workout partner",
+          "backstory": "A 29-year-old software developer who discovered fitness three years ago and never looked back.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        },
+        {
+          "id": "03ab610a-c795-4cae-b1af-a33c50508641",
+          "name": "Jordan",
+          "role": "reluctant exerciser",
+          "description": "Friend who struggles with workout consistency and needs motivation",
+          "backstory": "A 27-year-old who knows exercise is important but finds it hard to stay motivated.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        }
+      ]
+    },
+    "traces": []
+  },
+  {
+    "run": {
+      "id": "b7e82533-e0ed-4832-97e2-95764d4ea912",
+      "simulation_id": "7ed08ba7-52cc-4d27-a3b9-ddf3e3951b7a",
+      "status": "aborted",
+      "progress": 85,
+      "started_at": "2024-08-01T16:56:00Z",
+      "summary": null,
+      "orchestrator": {
+        "id": "f5e257e6-f87c-482f-ad53-a0532a15c846",
+        "name": "orchestrator",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "evaluator": {
+        "id": "e5d281eb-d79e-4507-bd04-8b2da7bd0974",
+        "name": "evaluator",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "planner": {
+        "id": "d31e3984-6ab3-4092-8366-6a8a0b23235d",
+        "name": "planner",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "reporter": {
+        "id": "48ebbfe4-37b8-4708-84ef-a45e92676b0c",
+        "name": "reporter",
+        "llm": {
+          "model": "gpt-4o"
+        }
+      },
+      "workers": [
+        {
+          "id": "c6817366-eb91-46c4-b2e2-d9ef6cce7730",
+          "name": "Alex",
+          "role": "motivated gym buddy",
+          "description": "Highly motivated fitness enthusiast who encourages their workout partner",
+          "backstory": "A 29-year-old software developer who discovered fitness three years ago and never looked back.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        },
+        {
+          "id": "03ab610a-c795-4cae-b1af-a33c50508641",
+          "name": "Jordan",
+          "role": "reluctant exerciser",
+          "description": "Friend who struggles with workout consistency and needs motivation",
+          "backstory": "A 27-year-old who knows exercise is important but finds it hard to stay motivated.",
+          "llm": {
+            "model": "gpt-4o"
+          }
+        }
+      ],
+      "aborted_at": "2024-08-01T17:11:00Z"
+    },
+    "traces": [
+      {
+        "from": "orchestrator",
+        "to": "planner",
+        "content": "Initiating planning for the Gym Buddy Motivation simulation, focusing on social dynamics between Alex and Jordan to analyze workout consistency.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:56:02Z"
+      },
+      {
+        "from": "planner",
+        "to": "orchestrator",
+        "content": "Planning process started: assigning roles and defining interaction steps between motivational Alex and reluctant Jordan.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:56:09Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "Alex",
+        "content": "Please prepare your motivational interventions to support Jordan’s workout consistency, emphasizing encouragement and shared goals.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:56:15Z"
+      },
+      {
+        "from": "Alex",
+        "to": "orchestrator",
+        "content": "I will use my enthusiasm to inspire Jordan, sharing personal progress and creating a friendly, supportive environment.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:56:21Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "Jordan",
+        "content": "Jordan, get ready to respond to Alex’s motivation, sharing your current feelings and barriers about workouts.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:56:27Z"
+      },
+      {
+        "from": "Jordan",
+        "to": "orchestrator",
+        "content": "I appreciate Alex’s support. I struggle with consistency but am willing to try different approaches to stay motivated.",
+        "is_system_trace": false,
+        "created_at": "2024-08-01T16:56:33Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "evaluator",
+        "content": "Request metrics on the motivational impact of Alex’s encouragement on Jordan’s workout adherence.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:56:39Z"
+      },
+      {
+        "from": "evaluator",
+        "to": "orchestrator",
+        "content": "Evaluation complete: social support from Alex has a positive influence, increasing Jordan’s workout commitment by 25%.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:56:46Z"
+      },
+      {
+        "from": "orchestrator",
+        "to": "reporter",
+        "content": "Generate final summary on how social support affects workout motivation between Alex and Jordan in the simulation.",
+        "is_system_trace": true,
+        "created_at": "2024-08-01T16:56:52Z"
+      }
+    ]
+  }
+]

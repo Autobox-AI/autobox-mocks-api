@@ -1,0 +1,233 @@
+{
+  "00cd9915-bdbc-460a-b16a-09f4cff17c2f": [
+    {
+      "name": "activity_participation_rate",
+      "description": "Measures the proportion of agents actively participating in planning discussions.",
+      "type": "gauge",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "percentage"
+    },
+    {
+      "name": "decision_time_seconds",
+      "description": "Tracks the time taken from activity start to decision finalization.",
+      "type": "histogram",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent involved in the decision process."
+        }
+      ],
+      "unit": "seconds"
+    },
+    {
+      "name": "activity_interaction_count",
+      "description": "Counts the number of interactions between agents during planning sessions.",
+      "type": "counter",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "interactions"
+    },
+    {
+      "name": "preference_agreement_score",
+      "description": "Represents the degree of agreement on a preferred activity among agents.",
+      "type": "gauge",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent involved in the agreement."
+        }
+      ],
+      "unit": "percentage"
+    },
+    {
+      "name": "decision_conflict_count",
+      "description": "Tallies the number of conflicts or disagreements encountered during planning.",
+      "type": "counter",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "conflicts"
+    },
+    {
+      "name": "activity_satisfaction_score",
+      "description": "Satisfaction level of agents with the planned activity.",
+      "type": "gauge",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "score"
+    },
+    {
+      "name": "activity_selection_efficiency",
+      "description": "Measures the efficiency of activity selection process, such as the number of iterations before decision.",
+      "type": "histogram",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "iterations"
+    },
+    {
+      "name": "resource_utilization_percentage",
+      "description": "Indicates the efficiency of resource usage during planning and organization.",
+      "type": "gauge",
+      "tags": [],
+      "unit": "percentage"
+    },
+    {
+      "name": "decision_reversals_count",
+      "description": "Counts how many times a decision was changed or reversed during planning.",
+      "type": "counter",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "reversals"
+    },
+    {
+      "name": "agent_influence_score",
+      "description": "Quantifies the influence of each agent on the final decision.",
+      "type": "gauge",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "score"
+    }
+  ],
+  "7ed08ba7-52cc-4d27-a3b9-ddf3e3951b7a": [
+    {
+      "name": "agent_workout_sessions_total",
+      "description": "Total number of workout sessions undertaken by each gym buddy.",
+      "type": "counter",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent (e.g., Alex, Jordan)."
+        }
+      ],
+      "unit": "sessions"
+    },
+    {
+      "name": "agent_workout_compliance_gauge",
+      "description": "Current level of workout compliance or consistency for each agent.",
+      "type": "gauge",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "percentage"
+    },
+    {
+      "name": "social_support_interaction_total",
+      "description": "Number of interactions or support actions exchanged between agents.",
+      "type": "counter",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent initiating or involved in support interaction."
+        },
+        {
+          "tag": "partner_name",
+          "description": "Name of the support partner agent."
+        }
+      ],
+      "unit": "interactions"
+    },
+    {
+      "name": "average_response_time_seconds",
+      "description": "Average time taken by agents to respond to workout prompts or support requests.",
+      "type": "summary",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "seconds"
+    },
+    {
+      "name": "workout_session_duration_seconds",
+      "description": "Duration of workout sessions to assess engagement levels.",
+      "type": "histogram",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "seconds"
+    },
+    {
+      "name": "motivation_level_score",
+      "description": "Self-reported or assessed motivation level score for each agent.",
+      "type": "gauge",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "score"
+    },
+    {
+      "name": "coach_feedback_score",
+      "description": "Score representing feedback from coaching or support received.",
+      "type": "gauge",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "score"
+    },
+    {
+      "name": "workout_goal_achievement_percentage",
+      "description": "Percentage of workout goals achieved by each agent.",
+      "type": "gauge",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "percentage"
+    },
+    {
+      "name": "peer_support_score",
+      "description": "Aggregate score of peer support activities and perception.",
+      "type": "gauge",
+      "tags": [
+        {
+          "tag": "agent_name",
+          "description": "Name of the agent."
+        }
+      ],
+      "unit": "score"
+    }
+  ]
+}

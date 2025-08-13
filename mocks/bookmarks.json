@@ -1,0 +1,50 @@
+[
+  {
+    "id": "e45adcf3-4932-462d-9025-3ddb5abadb0b",
+    "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
+    "type": "project",
+    "item_id": "13e58bc7-f859-4977-b6ac-8a313c9f1be8",
+    "item_name": "Friends Dynamics",
+    "item_description": "Experiment to understand how friends influence each other on decision making",
+    "project_id": "13e58bc7-f859-4977-b6ac-8a313c9f1be8",
+    "project_name": "Friends Dynamics",
+    "created_at": "2025-08-10T16:59:55.514Z",
+    "updated_at": "2025-08-10T16:59:55.514Z"
+  },
+  {
+    "id": "6df45b58-d567-4c8b-b165-0312b723015e",
+    "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
+    "type": "project",
+    "item_id": "e7557ef3-e3ed-4a4b-b960-a1777224c8f5",
+    "item_name": "Work Dynamics",
+    "item_description": "Experiment to understand how work environment influences productivity",
+    "project_id": "e7557ef3-e3ed-4a4b-b960-a1777224c8f5",
+    "project_name": "Work Dynamics",
+    "created_at": "2025-08-10T16:59:55.514Z",
+    "updated_at": "2025-08-10T16:59:55.514Z"
+  },
+  {
+    "id": "271bf120-1a5e-461f-8546-c50996d52ba9",
+    "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
+    "type": "simulation",
+    "item_id": "00cd9915-bdbc-460a-b16a-09f4cff17c2f",
+    "item_name": "Weekend Planning",
+    "item_description": "Simulation to understand how friends plan weekend activities together",
+    "project_id": null,
+    "project_name": "Friends Dynamics",
+    "created_at": "2025-08-10T16:59:55.514Z",
+    "updated_at": "2025-08-10T16:59:55.514Z"
+  },
+  {
+    "id": "2376bedf-5025-4c08-8ed7-45f9162c1fa1",
+    "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
+    "type": "simulation",
+    "item_id": "7ed08ba7-52cc-4d27-a3b9-ddf3e3951b7a",
+    "item_name": "Gym Buddy Motivation",
+    "item_description": "Simulation to study how gym buddies influence each other's workout consistency",
+    "project_id": null,
+    "project_name": "Friends Dynamics",
+    "created_at": "2025-08-10T16:59:55.514Z",
+    "updated_at": "2025-08-10T16:59:55.514Z"
+  }
+]
