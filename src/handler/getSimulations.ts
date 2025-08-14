@@ -7,15 +7,13 @@ export function getSimulations(request: VercelRequest, response: VercelResponse)
   try {
     const { pid } = request.query
 
-    let filteredSimulations = simulations.simulations
+    let filteredSimulations = simulations
 
     if (pid) {
       const project = projects.find((p) => p.id === pid)
 
       if (project) {
-        filteredSimulations = simulations.simulations.filter(
-          (sim) => sim.project_name === project.name
-        )
+        filteredSimulations = simulations.filter((sim) => sim.project_name === project.name)
       } else {
         // If no project found, return empty array
         filteredSimulations = []

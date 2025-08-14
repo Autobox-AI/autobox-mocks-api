@@ -6,15 +6,13 @@ export function getRuns(request: VercelRequest, response: VercelResponse) {
   try {
     const { id: simulation_id } = request.query
 
-    let filteredRuns = runs
+    let filteredRuns: readonly (typeof runs)[number][] = runs
 
     if (simulation_id) {
-      filteredRuns = runs.filter(
-        (runEntry) => runEntry.run && runEntry.run.simulation_id === simulation_id
-      )
+      filteredRuns = runs.filter((runEntry) => runEntry && runEntry.simulation_id === simulation_id)
     }
 
-    const transformedRuns = filteredRuns.map((runEntry) => runEntry.run)
+    const transformedRuns = filteredRuns.map((runEntry) => runEntry)
 
     const responseData = {
       total: transformedRuns.length,

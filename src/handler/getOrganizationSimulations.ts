@@ -24,7 +24,7 @@ export function getOrganizationSimulations(request: VercelRequest, response: Ver
     const projectNames = organizationProjects.map((project) => project.name)
 
     // Filter simulations by project names and add project_id
-    const organizationSimulations = simulations.simulations
+    const organizationSimulations = simulations
       .filter((simulation) =>
         projectNames.some(
           (projectName) => projectName.toLowerCase() === simulation.project_name.toLowerCase()

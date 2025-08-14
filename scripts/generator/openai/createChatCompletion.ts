@@ -24,7 +24,6 @@ export const createParsedChatCompletion = async <T extends Schema>(
   messages: ChatCompletionMessageParam[],
   schema: T
 ): Promise<z.infer<T>> => {
-  console.log(`Creating parsed chat completion for schema ${schema}`)
   const completion = await openAiClient.chat.completions.parse({
     messages,
     model: settings.openai.model,

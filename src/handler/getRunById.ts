@@ -6,15 +6,15 @@ export function getRunById(request: VercelRequest, response: VercelResponse) {
   try {
     const { rid } = request.query
     
-    const runEntry = runs.find(r => r.run && r.run.id === rid)
+    const run = runs.find(r => r.id === rid)
     
-    if (!runEntry) {
+    if (!run) {
       logger.warn(`Run not found: ${rid}`)
       return response.status(404).json({ error: 'Run not found' })
     }
     
-    logger.info(`Returning run: ${runEntry.run.id}`)
-    response.status(200).json(runEntry.run)
+    logger.info(`Returning run: ${run.id}`)
+    response.status(200).json(run)
   } catch (error) {
     logger.error('Error getting run by id:', error)
     response.status(500).json({ error: 'Failed to get run' })

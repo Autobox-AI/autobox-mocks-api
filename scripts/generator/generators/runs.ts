@@ -155,7 +155,6 @@ export const generateTraces = async (simulation: any, run: any): Promise<any[]> 
     const parsedCompletion = await createParsedChatCompletion(messages, TracesSchema)
     const traces = parsedCompletion.traces || []
 
-    // Post-process traces to ensure correct date format with milliseconds
     const processedTraces = traces.map((trace: any) => ({
       ...trace,
       created_at: ensureMillisecondsInDate(trace.created_at),
@@ -168,45 +167,22 @@ export const generateTraces = async (simulation: any, run: any): Promise<any[]> 
   }
 }
 
-// Helper function to ensure dates have milliseconds
 const ensureMillisecondsInDate = (dateString: string): string => {
   try {
-    // If the date already has milliseconds, return as is
     if (dateString.includes('.') && dateString.endsWith('Z')) {
       return dateString
     }
 
-    // Parse the date and convert to full ISO string with milliseconds
     const date = new Date(dateString)
     return date.toISOString()
   } catch (error) {
     console.error('Error processing date:', dateString, error)
-    // Fallback: return current time in correct format
     return new Date().toISOString()
   }
 }
 
 export const generateSummary = async (simulation: any, traces: any[]) => {
   console.log('Generating summary for run', simulation.id)
-
-  //   agents = [
-  //     {"id": worker["id"], "name": worker["name"]} for worker in simulation["agents"]
-  // ]
-  // params = {
-  //     "simulation_name": simulation["name"],
-  //     "simulation_description": simulation["description"],
-  //     "simulation_task": simulation["task"],
-  //     "agents": agents,
-  //     "traces": traces,
-  // }
-  // messages = [
-  //     {
-  //         "role": "system",
-  //         "content": prompt(params),
-  //     }
-  // ]
-  // summary = await create_chat_completion(messages)
-  // return summary
 
   const agents = simulation.agents.map((worker: any) => ({
     id: worker.id,

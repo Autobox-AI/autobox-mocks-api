@@ -12,9 +12,13 @@
     "test": "yarn test:unit && yarn test:integration",
     "test:integration": "NODE_ENV=test jest --config jest.integration.js --passWithNoTests",
     "test:unit": "NODE_ENV=test jest --config jest.unit.js --passWithNoTests",
-    "generate": "ts-node -r tsconfig-paths/register src/generator/main.ts",
+    "generate": "ts-node -r tsconfig-paths/register scripts/generator/main.ts",
     "generate:build": "tsc --project tsconfig.generator.json",
-    "generate:prod": "node dist/generator/main.js"
+    "generate:prod": "node dist/scripts/generator/main.js",
+    "sync:mocks": "tsx scripts/sync-mocks.ts",
+    "sync:mocks:watch": "tsx scripts/sync-mocks-advanced.ts --watch",
+    "generate:all": "yarn generate && yarn sync:mocks",
+    "dev:mocks": "yarn generate && yarn sync:mocks:watch"
   },
   "keywords": [],
   "license": "Apache-2.0",
@@ -34,6 +38,7 @@
     "ts-jest": "^29.1.4",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.4",
     "typescript": "^5.7.2"
   },
   "dependencies": {

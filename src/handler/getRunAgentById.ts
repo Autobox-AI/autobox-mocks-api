@@ -1,23 +1,21 @@
 import { VercelRequest, VercelResponse } from '@vercel/node'
+import { logger } from '../logger'
 import { runs } from '../mocks'
 import { simulations } from '../mocks/simulations'
-import { logger } from '../logger'
 
 export function getRunAgentById(request: VercelRequest, response: VercelResponse) {
   try {
     const { rid, agentId } = request.query
-    
-    const runEntry = runs.find(r => r.run && r.run.id === rid)
-    
+
+    const runEntry = runs.find((r) => r.id === rid)
+
     if (!runEntry) {
       logger.warn(`Run not found: ${rid}`)
       return response.status(404).json({ error: 'Run not found' })
     }
-    
-    const run = runEntry.run
 
     // Find the simulation to get detailed agent information
-    const simulation = simulations.simulations.find(s => s.id === run.simulation_id)
+    const simulation = simulations.find((s) => s.id === runEntry.simulation_id)
 
     if (!simulation) {
       logger.warn(`Simulation not found for run: ${rid}`)
@@ -25,13 +23,13 @@ export function getRunAgentById(request: VercelRequest, response: VercelResponse
     }
 
     // Get detailed agent information from simulation
-    const detailedAgents = simulation.agents.map(agent => ({
+    const detailedAgents = simulation.agents.map((agent) => ({
       id: agent.id,
       name: agent.name,
       description: agent.description,
       role: agent.role,
       backstory: agent.backstory,
-      instructions: agent.instructions || null
+      instructions: null,
     }))
 
     // Add system agents (orchestrator, evaluator, planner, reporter) with basic info
@@ -42,7 +40,7 @@ export function getRunAgentById(request: VercelRequest, response: VercelResponse
         description: 'Orchestrates the simulation flow and coordinates agent interactions',
         role: 'orchestrator',
         backstory: 'System agent responsible for managing simulation execution',
-        instructions: null
+        instructions: null,
       },
       {
         id: simulation.evaluator.id,
@@ -50,7 +48,7 @@ export function getRunAgentById(request: VercelRequest, response: VercelResponse
         description: 'Evaluates simulation outcomes and agent performance',
         role: 'evaluator',
         backstory: 'System agent responsible for assessing simulation results',
-        instructions: null
+        instructions: null,
       },
       {
         id: simulation.planner.id,
@@ -58,7 +56,7 @@ export function getRunAgentById(request: VercelRequest, response: VercelResponse
         description: 'Creates and manages execution plans for the simulation',
         role: 'planner',
         backstory: 'System agent responsible for simulation planning and strategy',
-        instructions: null
+        instructions: null,
       },
       {
         id: simulation.reporter.id,
@@ -66,18 +64,18 @@ export function getRunAgentById(request: VercelRequest, response: VercelResponse
         description: 'Generates summaries and reports of simulation results',
         role: 'reporter',
         backstory: 'System agent responsible for documentation and reporting',
-        instructions: null
-      }
+        instructions: null,
+      },
     ]
 
     const allAgents = [...detailedAgents, ...systemAgents]
-    const agent = allAgents.find(a => a.id === agentId)
-    
+    const agent = allAgents.find((a) => a.id === agentId)
+
     if (!agent) {
       logger.warn(`Agent not found: ${agentId}`)
       return response.status(404).json({ error: 'Agent not found' })
     }
-    
+
     logger.info(`Returning agent: ${agent.name} for run: ${rid}`)
     response.status(200).json(agent)
   } catch (error) {

@@ -229,3 +229,7 @@ tsconfig.tsbuildinfo
 notebooks/
 notebooks/*
 notebooks/*_lab.ipynb
+
+# Claude
+.claude/
+.serena/

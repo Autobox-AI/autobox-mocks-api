@@ -1,4 +1,4 @@
-export const tracesByRunId = {
+{
   "8ad898f4-c820-440c-adf7-1bad431eade7": [
     {
       "from": "orchestrator",
@@ -290,4 +290,4 @@ export const tracesByRunId = {
       "created_at": "2024-07-20T10:47:50.366Z"
     }
   ]
-} as const
+}

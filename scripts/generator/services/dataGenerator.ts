@@ -16,7 +16,20 @@ export class DataGenerator {
   }
 
   async generate() {
-    const simulationsById = simulations.reduce(
+    const projectNameToId = projects.reduce(
+      (acc, project) => {
+        acc[project.name] = project.id
+        return acc
+      },
+      {} as Record<string, string>
+    )
+
+    const enrichedSimulations = simulations.map((simulation) => ({
+      ...simulation,
+      project_id: projectNameToId[simulation.project_name] || null,
+    }))
+
+    const simulationsById = enrichedSimulations.reduce(
       (acc, sim) => {
         acc[sim.id] = sim
         return acc
@@ -24,14 +37,21 @@ export class DataGenerator {
       {} as Record<string, any>
     )
 
-    const [metricDefinitionsBySimulationId, runs] = await Promise.all([
-      generateMetricDefinitions(simulations),
-      generateRuns(simulations),
+    const [metricDefinitionsBySimulationId, runsWithTraces] = await Promise.all([
+      generateMetricDefinitions(enrichedSimulations),
+      generateRuns(enrichedSimulations),
     ])
+
+    const runs = runsWithTraces.map(({ run }) => run)
+    const tracesByRunId: Record<string, any[]> = {}
+
+    runsWithTraces.forEach(({ run, traces }) => {
+      tracesByRunId[run.id] = traces
+    })
 
     const metricValuesByRun: Record<string, any[]> = {}
 
-    const metricValuePromises = runs.map(async (runData) => {
+    const metricValuePromises = runsWithTraces.map(async (runData) => {
       const { run, traces } = runData
       const simulation = simulationsById[run.simulation_id]
       const metricDefinitions = metricDefinitionsBySimulationId[simulation.id]
@@ -42,14 +62,15 @@ export class DataGenerator {
 
     await Promise.all(metricValuePromises)
 
-    const bookmarks = generateBookmarks(projects, simulations)
+    const bookmarks = generateBookmarks(projects, enrichedSimulations)
 
     await this.saveToMocks({
       organizations,
       projects,
-      simulations,
+      simulations: enrichedSimulations,
       metricDefinitionsBySimulationId,
       runs,
+      tracesByRunId,
       metricValuesByRun,
       bookmarks,
     })
@@ -57,9 +78,10 @@ export class DataGenerator {
     return {
       organizations,
       projects,
-      simulations,
+      simulations: enrichedSimulations,
       metricDefinitionsBySimulationId,
       runs,
+      tracesByRunId,
       metricValuesByRun,
       bookmarks,
     }
@@ -86,6 +108,10 @@ export class DataGenerator {
         JSON.stringify(data.metricDefinitionsBySimulationId, null, 2)
       ),
       fs.writeFile(path.join(this.mocksPath, 'runs.json'), JSON.stringify(data.runs, null, 2)),
+      fs.writeFile(
+        path.join(this.mocksPath, 'traces.json'),
+        JSON.stringify(data.tracesByRunId, null, 2)
+      ),
       fs.writeFile(
         path.join(this.mocksPath, 'metric_values_by_run.json'),
         JSON.stringify(data.metricValuesByRun, null, 2)

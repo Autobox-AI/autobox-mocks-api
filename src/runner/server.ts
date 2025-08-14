@@ -4,10 +4,8 @@ dotenv.config()
 
 import { VercelRequest, VercelResponse } from '@vercel/node'
 import express from 'express'
-import getOrganizations from '../api/organizations'
-import bookmarksHandler from '../api/organizations/[oid]/bookmarks'
-import bookmarksIdHandler from '../api/organizations/[oid]/bookmarks/[id]'
-import ping from '../api/ping'
+import mainHandler from '../../api/index'
+import ping from '../../api/ping'
 import { PORT_DEV_SERVER } from '../config/constants'
 
 const app = express()
@@ -22,9 +20,18 @@ const handlerWrapper = (handler: (req: VercelRequest, res: VercelResponse) => vo
   }
 }
 
-app.get('/organizations', handlerWrapper(getOrganizations))
-app.get('/bookmarks', handlerWrapper(bookmarksHandler))
-app.get('/bookmarks/:id', handlerWrapper(bookmarksIdHandler))
+// Handle all API routes through the main handler
+app.all('/api/*', (req, res) => {
+  // Pass the full URL to main handler (it will handle /api prefix removal)
+  const vercelReq = req as VercelRequest
+  const vercelRes = res as unknown as VercelResponse
+  
+  // Set up query and params for the handler
+  vercelReq.query = req.query as any
+  
+  mainHandler(vercelReq, vercelRes)
+})
+
 app.get('/ping', handlerWrapper(ping))
 
 app.listen(PORT_DEV_SERVER, () => {

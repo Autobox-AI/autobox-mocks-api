@@ -1,37 +1,37 @@
 [
   {
-    "id": "00cd9915-bdbc-460a-b16a-09f4cff17c2f",
+    "id": "198ed2a7-63f2-44c6-8cda-6836a15991e7",
     "status": "verified",
     "name": "Weekend Planning",
     "description": "Simulation to understand how friends plan weekend activities together",
     "task": "Analyze group decision-making patterns for weekend activities",
-    "created_at": "2024-07-20T10:00:00",
-    "updated_at": "2024-07-20T10:30:00",
+    "created_at": "2024-07-20T10:00:00.000Z",
+    "updated_at": "2024-07-20T10:30:00.000Z",
     "project_name": "Friends Dynamics",
     "total_runs": 1,
     "orchestrator": {
-      "id": "03fe0bef-6214-43d2-bc48-e14be4fc39e6",
+      "id": "96b77e80-f09c-41e6-bd94-d838fbc68f27",
       "name": "orchestrator",
       "llm": {
         "model": "gpt-4o"
       }
     },
     "evaluator": {
-      "id": "6c6b9824-19ab-492f-9816-51ad88f72c3f",
+      "id": "9e696b15-a034-4dfe-8f8f-78deddee6866",
       "name": "evaluator",
       "llm": {
         "model": "gpt-4o"
       }
     },
     "planner": {
-      "id": "b3f4c38e-3a6e-4686-bacb-f576a07ee112",
+      "id": "35743778-86b3-496e-b4b4-abdee9ea2e0f",
       "name": "planner",
       "llm": {
         "model": "gpt-4o"
       }
     },
     "reporter": {
-      "id": "413294f1-bd2e-4510-a552-826506e326d2",
+      "id": "6385a194-0492-4478-9c9d-f83adc631e9f",
       "name": "reporter",
       "llm": {
         "model": "gpt-4o"
@@ -39,7 +39,7 @@
     },
     "agents": [
       {
-        "id": "991dc198-0df8-4b37-9163-485c96d809b0",
+        "id": "c130d53c-c719-4d59-9a6e-a07695f376b1",
         "name": "Sarah",
         "llm": {
           "model": "gpt-4o"
@@ -49,7 +49,7 @@
         "backstory": "A 28-year-old marketing professional who thrives on bringing friends together. Known for her creativity and ability to find activities that everyone enjoys."
       },
       {
-        "id": "765efbde-6a22-4e6c-8c12-cd7596fe2865",
+        "id": "4bc2bbb6-9b16-481d-834d-c169e6d3984e",
         "name": "Mike",
         "llm": {
           "model": "gpt-4o"
@@ -59,7 +59,7 @@
         "backstory": "A 30-year-old engineer who approaches weekend planning with systematic thinking. He's the friend who checks weather forecasts and considers travel times."
       },
       {
-        "id": "be04be7d-6096-42c8-a628-9d63fe376af4",
+        "id": "da3e4ce9-82e5-4b7d-93a2-70262d80f70f",
         "name": "Emma",
         "llm": {
           "model": "gpt-4o"
@@ -68,67 +68,7 @@
         "description": "Cost-aware friend who suggests affordable alternatives",
         "backstory": "A 26-year-old teacher who loves spending time with friends but is mindful of expenses."
       }
-    ]
-  },
-  {
-    "id": "7ed08ba7-52cc-4d27-a3b9-ddf3e3951b7a",
-    "status": "verified",
-    "name": "Gym Buddy Motivation",
-    "description": "Simulation to study how gym buddies influence each other's workout consistency",
-    "task": "Analyze the impact of social support on fitness motivation",
-    "created_at": "2024-08-01T18:00:00",
-    "updated_at": "2024-08-01T18:40:00",
-    "project_name": "Friends Dynamics",
-    "total_runs": 1,
-    "orchestrator": {
-      "id": "f5e257e6-f87c-482f-ad53-a0532a15c846",
-      "name": "orchestrator",
-      "llm": {
-        "model": "gpt-4o"
-      }
-    },
-    "evaluator": {
-      "id": "e5d281eb-d79e-4507-bd04-8b2da7bd0974",
-      "name": "evaluator",
-      "llm": {
-        "model": "gpt-4o"
-      }
-    },
-    "planner": {
-      "id": "d31e3984-6ab3-4092-8366-6a8a0b23235d",
-      "name": "planner",
-      "llm": {
-        "model": "gpt-4o"
-      }
-    },
-    "reporter": {
-      "id": "48ebbfe4-37b8-4708-84ef-a45e92676b0c",
-      "name": "reporter",
-      "llm": {
-        "model": "gpt-4o"
-      }
-    },
-    "agents": [
-      {
-        "id": "c6817366-eb91-46c4-b2e2-d9ef6cce7730",
-        "name": "Alex",
-        "llm": {
-          "model": "gpt-4o"
-        },
-        "role": "motivated gym buddy",
-        "description": "Highly motivated fitness enthusiast who encourages their workout partner",
-        "backstory": "A 29-year-old software developer who discovered fitness three years ago and never looked back."
-      },
-      {
-        "id": "03ab610a-c795-4cae-b1af-a33c50508641",
-        "name": "Jordan",
-        "llm": {
-          "model": "gpt-4o"
-        },
-        "role": "reluctant exerciser",
-        "description": "Friend who struggles with workout consistency and needs motivation",
-        "backstory": "A 27-year-old who knows exercise is important but finds it hard to stay motivated."
-      }
-    ]
+    ],
+    "project_id": "7627f271-d7c3-4865-9c23-18663b0b906a"
   }
 ]
