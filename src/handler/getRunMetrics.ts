@@ -28,9 +28,22 @@ export function getRunMetrics(request: VercelRequest, response: VercelResponse) 
           })
         }
         
+        // Handle different metric types
+        let value = 0
+        if (point.type === 'summary') {
+          // For summary metrics, use the sum or the median quantile
+          value = point.sum || (point.quantiles && point.quantiles[0]?.value) || 0
+        } else if (point.type === 'histogram') {
+          // For histogram metrics, use the sum
+          value = point.sum || 0
+        } else {
+          // For gauge and counter metrics
+          value = point.value || 0
+        }
+        
         return {
           time: point.dt, // Rename dt to time
-          value: point.value,
+          value: value,
           tags: tagsRecord
         }
       })
@@ -45,7 +58,7 @@ export function getRunMetrics(request: VercelRequest, response: VercelResponse) 
         name: metric.name,
         description: metric.description || `Metric for ${metric.name}`,
         unit: metric.unit,
-        type: metric.type || 'counter',
+        type: (metric.type || 'COUNTER').toUpperCase(), // Backend sends uppercase
         data: transformedData,
         tag_definitions: tagDefinitions
       }

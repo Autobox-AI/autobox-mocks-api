@@ -15,7 +15,7 @@ export function getRunAgents(request: VercelRequest, response: VercelResponse) {
     }
 
     // Find the simulation to get detailed agent information
-    const simulation = simulations.find((s) => s.id === run.simulation_id)
+    const simulation = simulations.find((s) => s && s.id === run.simulation_id)
 
     if (!simulation) {
       logger.warn(`Simulation not found for run: ${rid}`)

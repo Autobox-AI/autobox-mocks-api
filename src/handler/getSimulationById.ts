@@ -6,7 +6,7 @@ export function getSimulationById(request: VercelRequest, response: VercelRespon
   try {
     const { id } = request.query
 
-    const simulation = simulations.find((s) => s.id === id)
+    const simulation = simulations.find((s) => s && s.id === id)
 
     if (!simulation) {
       logger.warn(`Simulation not found: ${id}`)

@@ -19,10 +19,14 @@ export async function generateRuns(
     console.log(`Generating ${randomNumberOfRuns} runs for simulation ${simulation.id}`)
 
     const runPromises = Array.from({ length: randomNumberOfRuns }, () =>
-      generateSingleRun(simulation)
+      generateSingleRun(simulation).catch(error => {
+        console.error(`Error generating run for simulation ${simulation.id}:`, error)
+        return null
+      })
     )
 
-    return Promise.all(runPromises)
+    const results = await Promise.all(runPromises)
+    return results.filter(r => r !== null) as Array<{ run: any; traces: any[] }>
   }
 
   // Process all simulations in parallel
@@ -169,11 +173,29 @@ export const generateTraces = async (simulation: any, run: any): Promise<any[]> 
 
 const ensureMillisecondsInDate = (dateString: string): string => {
   try {
-    if (dateString.includes('.') && dateString.endsWith('Z')) {
-      return dateString
+    // Handle the specific format with extra characters
+    let cleanDateString = dateString
+    
+    // Remove any trailing characters after 'Z' (like '},{ ')
+    if (dateString.includes('Z')) {
+      cleanDateString = dateString.substring(0, dateString.indexOf('Z') + 1)
     }
-
-    const date = new Date(dateString)
+    
+    // Check if already in correct format
+    if (cleanDateString.includes('.') && cleanDateString.endsWith('Z')) {
+      // Validate it's a valid date
+      const testDate = new Date(cleanDateString)
+      if (!isNaN(testDate.getTime())) {
+        return cleanDateString
+      }
+    }
+    
+    const date = new Date(cleanDateString)
+    if (isNaN(date.getTime())) {
+      console.error('Invalid date, using current time:', dateString)
+      return new Date().toISOString()
+    }
+    
     return date.toISOString()
   } catch (error) {
     console.error('Error processing date:', dateString, error)

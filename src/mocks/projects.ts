@@ -1,6 +1,6 @@
 export const projects = [
   {
-    "id": "7627f271-d7c3-4865-9c23-18663b0b906a",
+    "id": "ed4fdf24-36c4-4541-a6f4-a73a0b5ca610",
     "name": "Friends Dynamics",
     "description": "Experiment to understand how friends influence each other on decision making",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -10,7 +10,7 @@ export const projects = [
     "confidence_level": "high"
   },
   {
-    "id": "2e2419a1-7f92-458f-aa3b-ef4551fa0b20",
+    "id": "9e6f7d12-99eb-47cd-9dd8-c82a28d06b2e",
     "name": "Work Dynamics",
     "description": "Experiment to understand how work environment influences productivity",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -20,7 +20,7 @@ export const projects = [
     "confidence_level": "high"
   },
   {
-    "id": "e7512ee5-2eab-46d4-90aa-218e7a24b972",
+    "id": "21371f7c-3afe-4875-88fd-267976fa41ae",
     "name": "Workplace Collaboration",
     "description": "A simulation to analyze how teams collaborate and how leadership dynamics affect productivity and decision-making.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -30,7 +30,7 @@ export const projects = [
     "confidence_level": "low"
   },
   {
-    "id": "6976c710-6a40-4bd2-9fe3-fb2dfdcb7cd7",
+    "id": "98fe4db0-981c-41ca-876c-836524c088c5",
     "name": "Climate Change Strategy",
     "description": "A simulation where different regions must decide on environmental policies, balancing economic growth with sustainability efforts.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -40,7 +40,7 @@ export const projects = [
     "confidence_level": "low"
   },
   {
-    "id": "e7f7d615-a23c-4cf7-9511-1763e05522ba",
+    "id": "55adbe7e-4c62-4cf2-8d32-3bc014ba4f03",
     "name": "Marketing Campaign Effectiveness",
     "description": "Simulate the impact of various marketing strategies on consumer behavior, focusing on how social media influencers or advertisements affect purchase decisions.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -50,7 +50,7 @@ export const projects = [
     "confidence_level": "high"
   },
   {
-    "id": "347ad389-4c01-42e6-a8dd-65513505d489",
+    "id": "1c3899f1-74a9-4dee-bb24-163fbc7103e6",
     "name": "Supply Chain Optimization",
     "description": "A multi-agent simulation for optimizing supply chain operations, including vendor negotiations, inventory management, and logistics coordination.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -60,7 +60,7 @@ export const projects = [
     "confidence_level": "medium"
   },
   {
-    "id": "47095941-743b-4f79-af4d-a56282e5a4ff",
+    "id": "08e0b240-d0e7-412d-9136-6bc2884e3ba9",
     "name": "Customer Service Optimization",
     "description": "Simulate customer support scenarios to optimize response strategies, agent allocation, and escalation procedures for improved satisfaction rates.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -70,7 +70,7 @@ export const projects = [
     "confidence_level": "high"
   },
   {
-    "id": "349aec00-6b91-4cb8-94ee-f6dbc3a30082",
+    "id": "0073cf03-b3ff-4606-ae0a-2d1faa530615",
     "name": "Product Launch Strategy",
     "description": "Multi-agent simulation for coordinating product launches across departments including marketing, sales, production, and distribution teams.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -80,7 +80,7 @@ export const projects = [
     "confidence_level": "medium"
   },
   {
-    "id": "e2ae947b-b9d7-46ab-a1be-db7d2bd699c0",
+    "id": "72d77233-d8f2-4907-b7b3-5bcce76224ae",
     "name": "Crisis Management Response",
     "description": "Simulate organizational crisis scenarios where different departments must coordinate responses to emergencies, PR disasters, or operational failures.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -90,7 +90,7 @@ export const projects = [
     "confidence_level": "low"
   },
   {
-    "id": "3dfc0d44-a024-4a3c-a193-b0848371606f",
+    "id": "5267d6ca-463b-4dd3-b200-87dd9e8cf08c",
     "name": "Merger Integration Planning",
     "description": "Simulate the integration process of two companies merging, including cultural alignment, system integration, and team restructuring decisions.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -100,7 +100,7 @@ export const projects = [
     "confidence_level": "medium"
   },
   {
-    "id": "1ca1cf62-d3d6-493a-8f27-7d5f9efa4d76",
+    "id": "09da8112-6fbb-4872-92f1-04b2474945d7",
     "name": "Budget Allocation Strategy",
     "description": "Multi-agent simulation where department heads negotiate annual budget allocations, balancing competing priorities and resource constraints.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -110,7 +110,7 @@ export const projects = [
     "confidence_level": "high"
   },
   {
-    "id": "e3d9f9ca-50d6-4571-8611-962a5cadd686",
+    "id": "d2582e35-b38b-45c2-85be-643b799dd15e",
     "name": "Talent Acquisition Pipeline",
     "description": "Simulate recruitment processes including candidate screening, interview scheduling, and competing offers from multiple companies.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -120,7 +120,7 @@ export const projects = [
     "confidence_level": "medium"
   },
   {
-    "id": "d2b19996-dabd-4ce0-b0e4-bf063fb0ab16",
+    "id": "7e5e12cc-3c08-4544-8d9f-502bc2951133",
     "name": "Retail Store Network Planning",
     "description": "Optimize retail store locations and inventory distribution based on demographic data, competition analysis, and consumer behavior patterns.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -130,7 +130,7 @@ export const projects = [
     "confidence_level": "high"
   },
   {
-    "id": "8ef4b782-424f-4421-b8ec-a7fd8409ca04",
+    "id": "656f21fa-6928-4fb1-b1de-52b6fe218efe",
     "name": "Healthcare Resource Management",
     "description": "Simulate hospital resource allocation including staff scheduling, equipment utilization, and patient flow optimization.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -140,7 +140,7 @@ export const projects = [
     "confidence_level": "low"
   },
   {
-    "id": "cf65a2ef-3e58-4967-8061-9217b2268769",
+    "id": "b76375e3-3f5a-4331-9010-e3df1b920aa6",
     "name": "Contract Negotiation Dynamics",
     "description": "Multi-party contract negotiations where agents represent different stakeholders with varying interests and bargaining power.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -150,7 +150,7 @@ export const projects = [
     "confidence_level": "medium"
   },
   {
-    "id": "9128abbe-d349-4445-9557-194f9e518769",
+    "id": "5fb52815-d9c5-4287-8932-b051dd2d5b14",
     "name": "Digital Transformation Roadmap",
     "description": "Simulate enterprise digital transformation initiatives with competing priorities, legacy system constraints, and change management challenges.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -160,7 +160,7 @@ export const projects = [
     "confidence_level": "medium"
   },
   {
-    "id": "353f140c-440e-4b2b-995b-9d77e5e37ea3",
+    "id": "07b6cfa9-d71a-4ce9-a7cc-db885db1385b",
     "name": "Competitive Pricing Strategy",
     "description": "Dynamic pricing simulation where competitors adjust prices based on market conditions, demand elasticity, and competitive moves.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -170,7 +170,7 @@ export const projects = [
     "confidence_level": "high"
   },
   {
-    "id": "0e3fbbc1-7de5-45b4-91ee-c0913474b6ab",
+    "id": "1c622a04-8fa6-4ba1-90e3-f59c00e678a5",
     "name": "Remote Team Coordination",
     "description": "Simulate remote team collaboration across time zones, including project handoffs, communication protocols, and productivity optimization.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -180,7 +180,7 @@ export const projects = [
     "confidence_level": "high"
   },
   {
-    "id": "d959b790-b65c-42b2-8210-22b7ba9fa21f",
+    "id": "cc4e2c0e-07d9-487c-bfcf-199a390f6955",
     "name": "Risk Assessment Framework",
     "description": "Multi-agent evaluation of enterprise risks including financial, operational, regulatory, and reputational risk factors.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -190,7 +190,7 @@ export const projects = [
     "confidence_level": "low"
   },
   {
-    "id": "aea98af1-81ea-4fd5-9897-3375ac5900e7",
+    "id": "ac37ee89-43a6-481d-9a7f-e6bd3ab466f1",
     "name": "Startup Investment Evaluation",
     "description": "Simulate venture capital investment decisions with multiple investors evaluating startup pitches, due diligence, and term negotiations.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -200,7 +200,7 @@ export const projects = [
     "confidence_level": "medium"
   },
   {
-    "id": "8fda24d1-bbe3-4b08-a696-a806c0f03f83",
+    "id": "26c33c7b-382a-41c0-8b55-7f1da767f63b",
     "name": "Political Negotiation",
     "description": "Simulation of political coalition building, policy trade-offs, and multi-party negotiations in democratic systems.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -210,7 +210,7 @@ export const projects = [
     "confidence_level": "medium"
   },
   {
-    "id": "4cad0fed-7fec-49ea-870f-7af746d37be1",
+    "id": "3c10d8a6-989d-47ef-b730-418ec7e840ce",
     "name": "Startup Decision Making",
     "description": "Simulate critical startup decisions including product launches, pivots, funding rounds, and competitive positioning.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -220,7 +220,7 @@ export const projects = [
     "confidence_level": "high"
   },
   {
-    "id": "67d9b74b-f409-4de2-9c14-92a4cd4c924e",
+    "id": "90400883-0f13-4ec6-bb8f-9389c075f20c",
     "name": "Digital Addiction",
     "description": "Study behavioral patterns and intervention strategies for digital and social media addiction recovery.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -230,7 +230,7 @@ export const projects = [
     "confidence_level": "low"
   },
   {
-    "id": "994eec7b-9b58-4b57-baa1-7c2889956f1a",
+    "id": "10772db6-d4ad-4198-87fa-44ea82d42fd0",
     "name": "Couple Dynamics",
     "description": "Analyze relationship dynamics, decision-making patterns, and conflict resolution in romantic partnerships.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",
@@ -240,7 +240,7 @@ export const projects = [
     "confidence_level": "medium"
   },
   {
-    "id": "b039098b-5478-482c-81f1-3f6870a86e81",
+    "id": "04358923-f1e9-42f5-b19b-51d02e71f4ed",
     "name": "Business Dynamics",
     "description": "Simulate executive team decision-making, strategic planning, and organizational leadership dynamics.",
     "organization_id": "9d2a8ba7-4d4c-4dc4-a07e-121b0bc92de4",

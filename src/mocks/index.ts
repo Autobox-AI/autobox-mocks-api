@@ -1,6 +1,6 @@
 export { bookmarks } from './bookmarks'
-export { metricDefinitions } from './metricDefinitions'
-export { metricValues } from './metricValues'
+export { metricDefinitionsBySimulationId as metricDefinitions } from './metricDefinitions'
+export { metricValuesByRun as metricValues } from './metricValues'
 export { organizations } from './organizations'
 export { projects } from './projects'
 export { runs } from './runs'

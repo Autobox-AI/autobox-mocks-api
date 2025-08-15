@@ -14,9 +14,14 @@ export async function generateMetricDefinitions(
 ): Promise<Record<string, MetricDefinition[]>> {
   const generateSimulationMetricDefinitions = async (
     simulation: any
-  ): Promise<{ simulationId: string; metrics: MetricDefinition[] }> => {
-    console.log(`Generating metric definitions for simulation ${simulation.id}`)
-    return await generateMetricDefinition(simulation)
+  ): Promise<{ simulationId: string; metrics: MetricDefinition[] } | null> => {
+    try {
+      console.log(`Generating metric definitions for simulation ${simulation.id}`)
+      return await generateMetricDefinition(simulation)
+    } catch (error) {
+      console.error(`Error generating metric definitions for simulation ${simulation.id}:`, error)
+      return null
+    }
   }
 
   // Process all simulations in parallel
@@ -27,7 +32,9 @@ export async function generateMetricDefinitions(
   // Flatten the results from all simulations
   return allSimulationMetricDefinitions.reduce(
     (acc, metricDefinitions) => {
-      acc[metricDefinitions.simulationId] = metricDefinitions.metrics
+      if (metricDefinitions) {
+        acc[metricDefinitions.simulationId] = metricDefinitions.metrics
+      }
       return acc
     },
     {} as Record<string, MetricDefinition[]>

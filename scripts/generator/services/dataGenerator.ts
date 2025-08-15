@@ -26,12 +26,14 @@ export class DataGenerator {
 
     const enrichedSimulations = simulations.map((simulation) => ({
       ...simulation,
-      project_id: projectNameToId[simulation.project_name] || null,
+      project_id: simulation?.project_name ? projectNameToId[simulation.project_name] : null,
     }))
 
     const simulationsById = enrichedSimulations.reduce(
       (acc, sim) => {
-        acc[sim.id] = sim
+        if (sim?.id) {
+          acc[sim.id] = sim
+        }
         return acc
       },
       {} as Record<string, any>
@@ -42,16 +44,22 @@ export class DataGenerator {
       generateRuns(enrichedSimulations),
     ])
 
-    const runs = runsWithTraces.map(({ run }) => run)
+    const runs = runsWithTraces
+      .filter(item => item && item.run)
+      .map(({ run }) => run)
     const tracesByRunId: Record<string, any[]> = {}
 
-    runsWithTraces.forEach(({ run, traces }) => {
-      tracesByRunId[run.id] = traces
-    })
+    runsWithTraces
+      .filter(item => item && item.run)
+      .forEach(({ run, traces }) => {
+        tracesByRunId[run.id] = traces
+      })
 
     const metricValuesByRun: Record<string, any[]> = {}
 
-    const metricValuePromises = runsWithTraces.map(async (runData) => {
+    const metricValuePromises = runsWithTraces
+      .filter(item => item && item.run)
+      .map(async (runData) => {
       const { run, traces } = runData
       const simulation = simulationsById[run.simulation_id]
       const metricDefinitions = metricDefinitionsBySimulationId[simulation.id]
