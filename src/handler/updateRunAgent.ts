@@ -15,7 +15,6 @@ export function updateRunAgent(request: VercelRequest, response: VercelResponse)
       return response.status(404).json({ error: 'Run not found' })
     }
     
-    // Find agent in workers, orchestrator, evaluator, planner, or reporter
     const agents = [
       ...(runEntry.run.workers || [])
     ].filter(Boolean)
@@ -27,7 +26,6 @@ export function updateRunAgent(request: VercelRequest, response: VercelResponse)
       return response.status(404).json({ error: 'Agent not found' })
     }
     
-    // Mock update - return updated agent data
     const updatedAgent = {
       ...agent,
       ...updateData,

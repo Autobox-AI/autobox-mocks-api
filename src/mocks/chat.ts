@@ -18,7 +18,6 @@ const agentQuotes = [
 ]
 
 export const getChatResponse = (message: string) => {
-  // For the first message or any message, return disclaimer + random quote
   const randomQuote = agentQuotes[Math.floor(Math.random() * agentQuotes.length)]
   
   return {

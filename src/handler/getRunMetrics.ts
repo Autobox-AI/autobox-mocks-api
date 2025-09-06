@@ -13,14 +13,10 @@ export function getRunMetrics(request: VercelRequest, response: VercelResponse) 
       return response.status(404).json({ error: 'Run not found' })
     }
     
-    // Find metrics for this run
     const rawMetrics = (metricValues as any)[rid as string] || []
     
-    // Transform metrics to match frontend expected format
     const transformedMetrics = rawMetrics.map((metric: any) => {
-      // Transform data points
       const transformedData = metric.data.map((point: any) => {
-        // Convert tags array to Record<string, string>
         const tagsRecord: Record<string, string> = {}
         if (metric.tags) {
           metric.tags.forEach((tag: any) => {
@@ -28,16 +24,12 @@ export function getRunMetrics(request: VercelRequest, response: VercelResponse) 
           })
         }
         
-        // Handle different metric types
         let value = 0
         if (point.type === 'summary') {
-          // For summary metrics, use the sum or the median quantile
           value = point.sum || (point.quantiles && point.quantiles[0]?.value) || 0
         } else if (point.type === 'histogram') {
-          // For histogram metrics, use the sum
           value = point.sum || 0
         } else {
-          // For gauge and counter metrics
           value = point.value || 0
         }
         
@@ -48,7 +40,6 @@ export function getRunMetrics(request: VercelRequest, response: VercelResponse) 
         }
       })
       
-      // Transform tag definitions from tags array
       const tagDefinitions = metric.tags ? metric.tags.map((tag: any) => ({
         tag: tag.key,
         description: `Tag for ${tag.key}`

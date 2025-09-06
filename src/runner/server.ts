@@ -20,13 +20,10 @@ const handlerWrapper = (handler: (req: VercelRequest, res: VercelResponse) => vo
   }
 }
 
-// Handle all API routes through the main handler
 app.all('/api/*', (req, res) => {
-  // Pass the full URL to main handler (it will handle /api prefix removal)
   const vercelReq = req as VercelRequest
   const vercelRes = res as unknown as VercelResponse
   
-  // Set up query and params for the handler
   vercelReq.query = req.query as any
   
   mainHandler(vercelReq, vercelRes)

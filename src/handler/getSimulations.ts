@@ -16,12 +16,10 @@ export function getSimulations(request: VercelRequest, response: VercelResponse)
       if (project) {
         filteredSimulations = simulations.filter((sim) => sim?.project_name === project.name)
       } else {
-        // If no project found, return empty array
         filteredSimulations = []
       }
     }
 
-    // Add runs count to each simulation
     const simulationsWithRunsCount = filteredSimulations.map(sim => {
       const runsCount = sim ? runs.filter(run => run.simulation_id === sim.id).length : 0
       return {

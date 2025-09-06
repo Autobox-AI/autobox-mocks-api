@@ -11,19 +11,15 @@ export function getOrganizationSimulations(request: VercelRequest, response: Ver
       return response.status(400).json({ error: 'Organization ID is required' })
     }
 
-    // Get all projects for this organization
     const organizationProjects = projects.filter((project) => project.organization_id === oid)
 
     if (organizationProjects.length === 0) {
-      // Organization exists but has no projects, return empty array
       logger.info(`No projects found for organization ${oid}, returning empty simulations`)
       return response.status(200).json({ simulations: [] })
     }
 
-    // Get all project names for this organization
     const projectNames = organizationProjects.map((project) => project.name)
 
-    // Filter simulations by project names and add project_id
     const organizationSimulations = simulations
       .filter((simulation) =>
         simulation && projectNames.some(
@@ -31,7 +27,6 @@ export function getOrganizationSimulations(request: VercelRequest, response: Ver
         )
       )
       .map((simulation) => {
-        // Find the corresponding project to get the project_id
         const project = organizationProjects.find(
           (p) => simulation && p.name.toLowerCase() === simulation.project_name.toLowerCase()
         )

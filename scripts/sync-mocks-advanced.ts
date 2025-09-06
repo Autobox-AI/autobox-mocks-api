@@ -70,24 +70,19 @@ async function writeTypeScriptFile(
   data: any,
   typeImport?: string
 ): Promise<void> {
-  // Format the data with proper indentation
   const formattedData = JSON.stringify(data, null, 2)
     .split('\n')
     .map((line, index) => (index === 0 ? line : line))
     .join('\n')
 
-  // Build the content
   let content = ''
   
-  // Add type import if provided
   if (typeImport) {
     content += `${typeImport}\n\n`
   }
   
-  // Add the export statement
   content += `export const ${exportName} = ${formattedData} as const\n`
   
-  // Add type export for better type inference
   content += `\nexport type ${capitalizeFirst(exportName)}Type = typeof ${exportName}\n`
   
   try {
@@ -108,18 +103,14 @@ async function syncSingleFile(mapping: FileMapping): Promise<boolean> {
   const tsPath = path.join(MOCKS_TS_DIR, mapping.tsFile)
 
   try {
-    // Check if JSON file exists
     await fs.access(jsonPath)
     
-    // Read JSON data
     let data = await readJsonFile(jsonPath)
     
-    // Apply transformation if provided
     if (mapping.transform) {
       data = mapping.transform(data)
     }
     
-    // Write TypeScript file
     await writeTypeScriptFile(tsPath, mapping.exportName, data, mapping.typeImport)
     return true
   } catch (error) {
@@ -151,10 +142,8 @@ function watchMocks(): void {
   console.log('Watching for changes in:', MOCKS_JSON_DIR)
   console.log('Press Ctrl+C to stop\n')
 
-  // Initial sync
   syncAllMocks()
 
-  // Set up file watchers for each JSON file
   FILE_MAPPINGS.forEach((mapping) => {
     const jsonPath = path.join(MOCKS_JSON_DIR, mapping.jsonFile)
     
@@ -172,7 +161,6 @@ function watchMocks(): void {
 }
 
 async function main() {
-  // Parse command line arguments
   const { values } = parseArgs({
     args: process.argv.slice(2),
     options: {
@@ -216,7 +204,6 @@ Examples:
   }
 }
 
-// Run the script
 main().catch((error) => {
   console.error('Fatal error:', error)
   process.exit(1)

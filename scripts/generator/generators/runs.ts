@@ -29,12 +29,10 @@ export async function generateRuns(
     return results.filter(r => r !== null) as Array<{ run: any; traces: any[] }>
   }
 
-  // Process all simulations in parallel
   const allSimulationRuns = await Promise.all(
     simulations.map((simulation) => generateSimulationRuns(simulation))
   )
 
-  // Flatten the results from all simulations
   const runs: Array<{ run: any; traces: any[] }> = allSimulationRuns.flat()
 
   return runs
@@ -83,7 +81,6 @@ const generateSingleRun = async (simulation: any): Promise<{ run: Run; traces: T
     updated_at: timestamps['updated_at'],
   }
 
-  // Ensure all run dates have the correct format with milliseconds
   if (run.finished_at) {
     run.finished_at = ensureMillisecondsInDate(run.finished_at)
   }
@@ -173,17 +170,13 @@ export const generateTraces = async (simulation: any, run: any): Promise<any[]> 
 
 const ensureMillisecondsInDate = (dateString: string): string => {
   try {
-    // Handle the specific format with extra characters
     let cleanDateString = dateString
     
-    // Remove any trailing characters after 'Z' (like '},{ ')
     if (dateString.includes('Z')) {
       cleanDateString = dateString.substring(0, dateString.indexOf('Z') + 1)
     }
     
-    // Check if already in correct format
     if (cleanDateString.includes('.') && cleanDateString.endsWith('Z')) {
-      // Validate it's a valid date
       const testDate = new Date(cleanDateString)
       if (!isNaN(testDate.getTime())) {
         return cleanDateString

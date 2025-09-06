@@ -2,7 +2,6 @@ import { VercelRequest, VercelResponse } from '@vercel/node'
 import { getChatResponse } from '../mocks/chat'
 
 export const postChat = (request: VercelRequest, response: VercelResponse) => {
-  // Enable CORS
   response.setHeader('Access-Control-Allow-Credentials', 'true')
   response.setHeader('Access-Control-Allow-Origin', '*')
   response.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT')
@@ -24,7 +23,6 @@ export const postChat = (request: VercelRequest, response: VercelResponse) => {
 
   const chatResponse = getChatResponse(message)
   
-  // Add a small delay to simulate processing
   setTimeout(() => {
     response.status(200).json(chatResponse)
   }, 500)

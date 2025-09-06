@@ -14,7 +14,6 @@ export function getRunAgents(request: VercelRequest, response: VercelResponse) {
       return response.status(404).json({ error: 'Run not found' })
     }
 
-    // Find the simulation to get detailed agent information
     const simulation = simulations.find((s) => s && s.id === run.simulation_id)
 
     if (!simulation) {
@@ -22,7 +21,6 @@ export function getRunAgents(request: VercelRequest, response: VercelResponse) {
       return response.status(404).json({ error: 'Simulation not found' })
     }
 
-    // Get detailed agent information from simulation
     const detailedAgents = simulation.agents.map((agent) => ({
       id: agent.id,
       name: agent.name,
@@ -32,7 +30,6 @@ export function getRunAgents(request: VercelRequest, response: VercelResponse) {
       instructions: null,
     }))
 
-    // Add system agents (orchestrator, evaluator, planner, reporter) with basic info
     const systemAgents = [
       {
         id: simulation.orchestrator.id,

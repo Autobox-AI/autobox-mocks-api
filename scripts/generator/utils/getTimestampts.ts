@@ -6,14 +6,11 @@ interface Timestamps {
 }
 
 export const getTimestamps = (status: string, simulationCreatedAt: string): Timestamps => {
-  // Parse the simulation creation time
   const simCreated = new Date(simulationCreatedAt)
 
-  // Add a random time delta between 1 minute and 1 hour after simulation creation
   const randomMinutes = Math.floor(Math.random() * 60) + 1
   const startedAt = new Date(simCreated.getTime() + randomMinutes * 60 * 1000)
 
-  // Format to full ISO string with milliseconds
   const formatTimestamp = (date: Date): string => {
     return date.toISOString()
   }
@@ -40,7 +37,6 @@ export const getTimestamps = (status: string, simulationCreatedAt: string): Time
     updatedAt = formatTimestamp(updatedAtDate)
   }
 
-  // Create the result object, omitting undefined values
   const result: Timestamps = {
     started_at: startedAtFormatted,
   }

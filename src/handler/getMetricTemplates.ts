@@ -4,7 +4,6 @@ import { logger } from '../logger'
 
 export function getMetricTemplates(request: VercelRequest, response: VercelResponse) {
   try {
-    // Convert metricDefinitions object to array format
     const templates = Object.values(metricDefinitions).flat()
     
     logger.info(`Returning ${templates.length} metric templates`)

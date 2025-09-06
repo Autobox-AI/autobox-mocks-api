@@ -3,7 +3,6 @@ import { ChatCompletionMessageParam } from 'openai/resources/chat/completions'
 import { z, Schema } from 'zod'
 import { createChatCompletion, createParsedChatCompletion } from './createChatCompletion'
 
-// Control concurrent API calls (adjust based on your OpenAI tier limits)
 const CONCURRENT_API_CALLS = 10 // Increase from default sequential processing
 const apiLimit = pLimit(CONCURRENT_API_CALLS)
 
@@ -20,7 +19,6 @@ export const batchCreateParsedChatCompletion = async <T extends Schema>(
   return apiLimit(() => createParsedChatCompletion(messages, schema))
 }
 
-// Batch processor for multiple similar requests
 export const processBatch = async <T>(
   items: T[],
   processor: (item: T) => Promise<any>,
@@ -35,7 +33,6 @@ export const processBatch = async <T>(
     )
     results.push(...batchResults)
     
-    // Optional: Add small delay between batches to avoid rate limits
     if (i + batchSize < items.length) {
       await new Promise(resolve => setTimeout(resolve, 100))
     }

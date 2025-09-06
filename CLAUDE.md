@@ -144,3 +144,20 @@ Runs (1) → (N) Agents, Traces, Metrics
 3. **Serverless Architecture**: Single function handles all routes to minimize cold starts
 4. **Async Generation**: Mock generation uses concurrent processing with LLM rate limiting
 5. **Validation**: Zod schemas validate all generated data structure
+
+## Code Style Guidelines
+
+### Comments
+- **Avoid redundant comments**: Do not add comments that simply restate what the code does
+- **Remove obvious comments**: Section labels, self-explanatory function descriptions, and trivial explanations should be omitted
+- **Keep meaningful comments**: Preserve comments that explain complex logic, non-obvious algorithms, or important business rules
+- **Examples of comments to avoid**:
+  - `// Convert array to object` (when the code clearly shows this)
+  - `// Organizations` (as a section label when the code structure is clear)
+  - `// Check if file exists` (when using obvious file system checks)
+  - `// Handle different metric types` (when a switch/if statement clearly shows this)
+- **Examples of comments to keep**:
+  - Comments explaining why a specific approach was chosen
+  - TODO comments with actionable items
+  - Comments documenting edge cases or gotchas
+  - API documentation and JSDoc comments

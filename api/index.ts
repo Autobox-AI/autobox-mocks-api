@@ -27,21 +27,17 @@ import {
   updateRunAgent,
 } from '../src'
 
-// Route definition interface
 interface RouteHandler {
   handler: (req: VercelRequest, res: VercelResponse) => VercelResponse | void | Promise<void>
   methods: string[]
 }
 
-// Route mapping
 const routes: Record<string, RouteHandler> = {
-  // Ping endpoint
   ping: {
     handler: (req, res) => res.status(200).send('pong'),
     methods: ['GET'],
   },
 
-  // Organizations
   organizations: {
     handler: getOrganizations,
     methods: ['GET'],
@@ -55,7 +51,6 @@ const routes: Record<string, RouteHandler> = {
     methods: ['GET'],
   },
 
-  // Bookmarks
   'organizations/[oid]/bookmarks': {
     handler: (req, res) => {
       if (req.method === 'GET') return getBookmarks(req, res)
@@ -71,7 +66,6 @@ const routes: Record<string, RouteHandler> = {
     methods: ['GET', 'DELETE'],
   },
 
-  // Projects
   'organizations/[oid]/projects': {
     handler: (req, res) => {
       if (req.method === 'GET') return getProjects(req, res)
@@ -84,7 +78,6 @@ const routes: Record<string, RouteHandler> = {
     methods: ['GET'],
   },
 
-  // Simulations
   'projects/[pid]/simulations': {
     handler: (req, res) => {
       if (req.method === 'GET') return getSimulations(req, res)
@@ -97,7 +90,6 @@ const routes: Record<string, RouteHandler> = {
     methods: ['GET'],
   },
 
-  // Runs
   'simulations/[id]/runs': {
     handler: (req, res) => {
       if (req.method === 'GET') return getRuns(req, res)
@@ -118,7 +110,6 @@ const routes: Record<string, RouteHandler> = {
     methods: ['GET'],
   },
 
-  // Agents
   'runs/[rid]/agents': {
     handler: getRunAgents,
     methods: ['GET'],
@@ -135,7 +126,6 @@ const routes: Record<string, RouteHandler> = {
     methods: ['GET'],
   },
 
-  // Templates
   'templates/metrics': {
     handler: (req, res) => {
       if (req.method === 'GET') return getMetricTemplates(req, res)
@@ -144,14 +134,12 @@ const routes: Record<string, RouteHandler> = {
     methods: ['GET', 'POST'],
   },
 
-  // Chat
   chat: {
     handler: postChat,
     methods: ['POST', 'OPTIONS'],
   },
 }
 
-// Helper function to match dynamic routes
 function matchRoute(path: string): { route: string; params: Record<string, string> } | null {
   const pathSegments = path.split('/').filter(Boolean)
 
@@ -168,11 +156,9 @@ function matchRoute(path: string): { route: string; params: Record<string, strin
       const pathSegment = pathSegments[i]
 
       if (routeSegment.startsWith('[') && routeSegment.endsWith(']')) {
-        // Dynamic segment
         const paramName = routeSegment.slice(1, -1)
         params[paramName] = pathSegment
       } else if (routeSegment !== pathSegment) {
-        // Static segment doesn't match
         isMatch = false
         break
       }
@@ -188,12 +174,10 @@ function matchRoute(path: string): { route: string; params: Record<string, strin
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
-    // Extract path from URL, removing /api prefix and query string
     const url = req.url || ''
     const [pathname] = url.split('?')
     const path = pathname.replace(/^\/api\//, '')
 
-    // Match route
     const match = matchRoute(path)
 
     if (!match) {
@@ -203,16 +187,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const { route, params } = match
     const routeHandler = routes[route]
 
-    // Check if method is allowed
     if (!routeHandler.methods.includes(req.method || 'GET')) {
       res.setHeader('Allow', routeHandler.methods)
       return res.status(405).json({ error: `Method ${req.method} Not Allowed` })
     }
 
-    // Merge dynamic params into query
     req.query = { ...req.query, ...params }
 
-    // Execute handler
     await routeHandler.handler(req, res)
   } catch (error) {
     console.error('Handler error:', error)

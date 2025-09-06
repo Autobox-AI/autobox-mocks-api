@@ -24,12 +24,10 @@ export async function generateMetricDefinitions(
     }
   }
 
-  // Process all simulations in parallel
   const allSimulationMetricDefinitions = await Promise.all(
     simulations.map((simulation) => generateSimulationMetricDefinitions(simulation))
   )
 
-  // Flatten the results from all simulations
   return allSimulationMetricDefinitions.reduce(
     (acc, metricDefinitions) => {
       if (metricDefinitions) {

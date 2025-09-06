@@ -13,7 +13,6 @@ export function getRunAgentTraces(request: VercelRequest, response: VercelRespon
       return response.status(404).json({ error: 'Run not found' })
     }
     
-    // Filter traces for specific agent - check 'from' and 'to' fields
     const agentTraces = (runEntry.traces || []).filter(trace => 
       trace.from === agentId || 
       trace.to === agentId ||

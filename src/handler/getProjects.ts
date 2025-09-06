@@ -12,9 +12,7 @@ export function getProjects(request: VercelRequest, response: VercelResponse) {
       filteredProjects = projects.filter((project) => project.organization_id === organization_id)
     }
 
-    // Add simulations to each project
     const projectsWithSimulations = filteredProjects.map(project => {
-      // Find simulations for this project by matching project name
       const projectSimulations = simulations.filter(sim => 
         sim && sim.project_name && sim.project_name.toLowerCase() === project.name.toLowerCase()
       )

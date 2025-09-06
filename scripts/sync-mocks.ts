@@ -85,18 +85,14 @@ async function syncMocks(): Promise<void> {
     const tsPath = path.join(MOCKS_TS_DIR, mapping.tsFile)
 
     try {
-      // Check if JSON file exists
       await fs.access(jsonPath)
       
-      // Read JSON data
       let data = await readJsonFile(jsonPath)
       
-      // Apply transformation if provided
       if (mapping.transform) {
         data = mapping.transform(data)
       }
       
-      // Write TypeScript file
       await writeTypeScriptFile(tsPath, mapping.exportName, data)
     } catch (error) {
       if ((error as any).code === 'ENOENT') {
@@ -110,7 +106,6 @@ async function syncMocks(): Promise<void> {
   console.log('\n✓ Mock synchronization completed!')
 }
 
-// Run the sync
 syncMocks().catch((error) => {
   console.error('Fatal error during synchronization:', error)
   process.exit(1)

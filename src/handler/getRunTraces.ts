@@ -25,9 +25,7 @@ export function getRunTraces(request: VercelRequest, response: VercelResponse) {
         'X-Accel-Buffering': 'no',
       })
 
-      // Only stream for "in progress" status (with space)
       if (run.status === 'in progress') {
-        // For in-progress runs, simulate streaming one trace at a time
         if (traces.length <= 0) {
           response.write('data: [DONE]\n\n')
           response.end()
@@ -49,7 +47,6 @@ export function getRunTraces(request: VercelRequest, response: VercelResponse) {
             const iteration = Math.floor(traceIndex / totalTraces)
             const trace = sortedTraces[originalIndex]
 
-            // Create a modified copy with updated timestamp for iterations > 0
             const now = new Date()
             const modifiedTrace =
               iteration === 0
@@ -64,20 +61,16 @@ export function getRunTraces(request: VercelRequest, response: VercelResponse) {
             response.write(`data: ${traceData}\n\n`)
 
             traceIndex++
-            // Send next trace after a delay (500ms to 1500ms for realistic simulation)
             setTimeout(sendNextTrace, 500 + Math.random() * 1000)
           } else {
-            // All traces sent, complete the stream
             response.write('data: [DONE]\n\n')
             response.end()
           }
         }
 
-        // Start streaming
         sendNextTrace()
         return
       } else {
-        // For completed or other statuses, send all traces immediately
         if (traces.length <= 0) {
           response.write('data: [DONE]\n\n')
           response.end()
@@ -99,7 +92,6 @@ export function getRunTraces(request: VercelRequest, response: VercelResponse) {
         return
       }
     } else {
-      // Non-streaming response with polling support
       if (traces.length <= 0) {
         return response.status(200).json({ traces: [] })
       }
@@ -109,15 +101,10 @@ export function getRunTraces(request: VercelRequest, response: VercelResponse) {
         return dateB - dateA
       })
 
-      // If polling counter is provided and run is "in progress", return partial traces
       if (pollingCounter !== null && run.status === 'in progress') {
-        // Calculate which trace to return based on counter
-        // Counter starts at 10 and goes down to 1
-        // We want to return traces in chronological order (oldest first)
         const reversedTraces = [...sortedTraces].reverse() // Now in ASC order (oldest first)
         const traceIndex = 10 - pollingCounter // 0 when counter=10, 9 when counter=1
 
-        // If we've shown all traces, mark as done
         if (traceIndex >= reversedTraces.length) {
           logger.info(
             `Final polling request (counter=${pollingCounter}) for run: ${rid}, all traces shown`
@@ -128,7 +115,6 @@ export function getRunTraces(request: VercelRequest, response: VercelResponse) {
           })
         }
 
-        // Return exactly one trace
         const traceToReturn = reversedTraces[traceIndex]
         logger.info(
           `Polling request (counter=${pollingCounter}) for run: ${rid}, returning trace ${traceIndex + 1} of ${reversedTraces.length}`
@@ -140,7 +126,6 @@ export function getRunTraces(request: VercelRequest, response: VercelResponse) {
         })
       }
 
-      // Default behavior - return all traces
       logger.info(`Returning ${sortedTraces.length} traces for run: ${rid}`)
       response.status(200).json({ traces: sortedTraces })
     }

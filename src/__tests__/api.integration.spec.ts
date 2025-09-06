@@ -139,7 +139,6 @@ describe('API Integration Tests', () => {
       
       organizationsHandler(mockRequest, mockResponse)
       
-      // Handler should either respond with method not allowed or process gracefully
       expect(mockResponse.status).toHaveBeenCalled()
     })
   })

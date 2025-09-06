@@ -7,12 +7,10 @@ import { calculateStats, printStats } from './utils/stats'
 
 console.log('Testing TypeScript Mock Generator...\n')
 
-// Test mock data loading
 console.log('✓ Organizations loaded:', organizations.length)
 console.log('✓ Projects loaded:', projects.length)
 console.log('✓ Simulations loaded:', simulations.length)
 
-// Test stats calculation
 const stats = calculateStats(organizations, projects, simulations, [], {}, {}, [])
 
 printStats(stats, 0.01)

@@ -472,7 +472,6 @@ export const simulations = [
     ],
   },
 ,
-  // Work Dynamics simulations (3)
   {
     id: uuidv4(),
     status: 'verified',
@@ -637,7 +636,6 @@ export const simulations = [
     ],
   },
 
-  // Workplace Collaboration simulations (2)
   {
     id: uuidv4(),
     status: 'verified',
@@ -753,7 +751,6 @@ export const simulations = [
     ],
   },
 
-  // Supply Chain Optimization simulations (3)
   {
     id: uuidv4(),
     status: 'verified',
@@ -910,7 +907,6 @@ export const simulations = [
     ],
   },
 
-  // Customer Service Optimization simulations (2)
   {
     id: uuidv4(),
     status: 'verified',
@@ -1026,7 +1022,6 @@ export const simulations = [
     ],
   },
 
-  // Product Launch Strategy simulations (3)
   {
     id: uuidv4(),
     status: 'verified',
@@ -1191,7 +1186,6 @@ export const simulations = [
     ],
   },
 
-  // Crisis Management Response simulations (2)
   {
     id: uuidv4(),
     status: 'verified',
@@ -1315,7 +1309,6 @@ export const simulations = [
     ],
   },
 
-  // Merger Integration Planning simulations (2)
   {
     id: uuidv4(),
     status: 'verified',
@@ -1431,7 +1424,6 @@ export const simulations = [
     ],
   },
 
-  // Budget Allocation Strategy simulations (2)
   {
     id: uuidv4(),
     status: 'verified',
@@ -1555,7 +1547,6 @@ export const simulations = [
     ],
   },
 
-  // Talent Acquisition Pipeline simulations (2)
   {
     id: uuidv4(),
     status: 'verified',
